@@ -31,6 +31,18 @@ class ImageModels(models.Model):
     image = models.ImageField(upload_to='static/image/skrol/', blank=True, null=True)
 
 
+class ImageActiveMOdels(models.Model):
+    image = models.ImageField(upload_to='static/image/skrol/', blank=True, null=True)
+
+
+class ImageNextMOdels(models.Model):
+    image = models.ImageField(upload_to='static/image/skrol/', blank=True, null=True)
+
+
+class ImagePrevMOdels(models.Model):
+    image = models.ImageField(upload_to='static/image/skrol/', blank=True, null=True)
+
+
 class FacultetsModels(models.Model):
     title = models.CharField(max_length=255, null=True, blank=True)
     body = models.TextField(blank=True, null=True)
@@ -76,3 +88,34 @@ class ScheduleModel(models.Model):
     def __str__(self):
         return f'{self.group}'
 
+
+class ProfessorModel(models.Model):
+    name = models.CharField(max_length=255)
+    image = models.ImageField(upload_to='static/img/professor/')
+    body = models.TextField()
+    email = models.EmailField(blank=True, null=True)
+    number = models.CharField(max_length=255, blank=True, null=True)
+    room = models.CharField(max_length=255, null=True, blank=True)
+
+    def __str__(self):
+        return f'{self.name}'
+
+
+class TeachersModel(models.Model):
+    name = models.CharField(max_length=255)
+    image = models.ImageField(upload_to='static/img/professor/')
+    body = models.TextField()
+    email = models.EmailField(blank=True, null=True)
+    number = models.CharField(max_length=255, blank=True, null=True)
+    room = models.CharField(max_length=255, null=True, blank=True)
+
+    def __str__(self):
+        return f'{self.name}'
+
+
+class BitiruvchilarModel(models.Model):
+    name = models.CharField(max_length=255, blank=True, null=True)
+    ball = models.DecimalField()
+
+    def __str__(self):
+        return f'{self.name}   |    {self.ball}'
