@@ -1,16 +1,20 @@
 from django.shortcuts import render
 
 from digital.models import ImageModels
-from .models import NewsModel, TeachModels
+from .models import NewsModel, TeachModels,ImageNextMOdels,ImageActiveMOdels,ImagePrevMOdels
 
 def HomeView(request):
     imagemodel = ImageModels.objects.all()
+    imgn=ImageNextMOdels.objects.first()
+    imga=ImageActiveMOdels.objects.first()
+    imgp=ImagePrevMOdels.objects.first()
     news = NewsModel.objects.all()
-    context = {
-        'news': news
-    }
+
     return render(request, 'index.html', {
-        "images": imagemodel
+        "images": imagemodel,
+        "imgn":imgn,
+        "imga":imga,
+        "imgp":imgp,
     })
 
 

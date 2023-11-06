@@ -115,7 +115,7 @@ class TeachersModel(models.Model):
 
 class BitiruvchilarModel(models.Model):
     name = models.CharField(max_length=255, blank=True, null=True)
-    ball = models.DecimalField()
+    ball = models.DecimalField(max_digits=10,decimal_places=10)
 
     def __str__(self):
         return f'{self.name}   |    {self.ball}'
