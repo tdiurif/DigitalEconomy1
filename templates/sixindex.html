@@ -1,24 +1,25 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/sixstyle.css">
+    <link rel="stylesheet" href="{% static 'css/sixstyle.css' %}">
     <title>oltinchi oyna</title>
 </head>
 <body>
     <div class="menu">
         <ul>
             <li>
-                <a href="index.html">
-                    <img src="img/logo.png" alt="">
+                <a href="{% url 'home' %}">
+                    <img src="{% static 'img/logo.png' %}" alt="">
                     <p>Raqamli iqtisodiyot</p>
                 </a>
             </li>
-            <li><a href="twoindex.html">Fakultetlar haqida</a></li>
-            <li><a href="threeindex.html">Ta’lim</a></li>
-            <li><a href="fiveindex.html">Kafedralar</a></li>
-            <li><a href="sixindex.html">Tadqiqotlar</a></li>
+            <li><a href="{% url 'about' %}">Fakultet haqida</a></li>
+            <li><a href="{% url 'tech' %}">Ta’lim</a></li>
+            <li><a href="{% url 'departament' %}">Kafedralar</a></li>
+            <li><a href="{% url 'tadqiqot' %}">Tadqiqotlar</a></li>
         </ul>
     </div>
     <h2 class="num">
@@ -39,18 +40,18 @@
     </div>
     <div class="navbar2">
         <div class="blog1">
-            <img src="img/olti1.png" alt="">
-            <img src="img/olti2.png" alt="">
-            <img src="img/olti3.png" alt="">
+            <img src="{%  static 'img/olti1.png' %}" alt="">
+            <img src="{%  static 'img/olti2.png' %}" alt="">
+            <img src="{%  static 'img/olti3.png' %}" alt="">
         </div>
         <div class="blog2">
-            <img src="img/olti4.png" alt="">
-            <img src="img/olti5.png" alt="">
-            <img src="img/olti6.png" alt="">
+            <img src="{%  static 'img/olti4.png' %}" alt="">
+            <img src="{%  static 'img/olti5.png' %}" alt="">
+            <img src="{%  static 'img/olti6.png' %}" alt="">
         </div>
     </div>
     <div class="bg2">
-        <img src="img/6 oyna 7 rasm.png" alt="">
+        <img src="{% static 'img/6 oyna 7 rasm.png' %}" alt="">
     </div>
     <div class="navbar3">
         <div class="blog1">
@@ -76,7 +77,7 @@
     </div>
     <div class="navbar4">
         <div class="blog1">
-            <img src="img/olti7.png" alt="">
+            <img src="{% static 'img/olti7.png' %}" alt="">
         </div>
         <div class="blog2">
             <div class="box1">
@@ -127,7 +128,7 @@
             </div>
         </div>
         <div class="blog1">
-            <img src="img/olti8.png" alt="">
+            <img src="{% static 'img/olti8.png' %}" alt="">
         </div>
     </div>
     <footer>
