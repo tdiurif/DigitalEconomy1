@@ -1,0 +1,567 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+@font-face{
+    font-family: Gilroy;
+    src: url(../font/Gilroy-UltraLight.ttf);
+}
+@font-face{
+    font-family: Merriweather;
+    src: url(../font/MERRIWEATHER-BOLD.TTF)
+}
+body{
+    max-width: 1920px;
+    background-color: #FAFDFF;
+}
+.menu{
+    border-bottom: 1px solid #3772FF;
+}
+.menu ul {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    margin: 45px 0 0 300px;
+}
+.menu ul li:nth-child(1) a{
+    display: flex;
+    align-items: center;
+}
+.menu ul li:nth-child(1) img{
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+}
+.menu ul li a{
+    color: #000;
+    font-family: Gilroy;
+    text-align: center;
+    font-style: normal;
+    font-size: 24px;
+    font-weight: 600;
+    margin-left: 80px;
+    padding: 10px;
+    cursor: pointer;
+}
+.menu ul li a:hover{
+    color: #3772FF;
+    transition: all 0.5s;
+}
+
+.num{
+    color: #474F62;
+font-family: Merriweather;
+font-size: 36px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+text-align: center;
+margin-top: 200px;
+}
+/* ----------heder-------- */
+
+.bg1{
+    width: 1536.854px;
+height: 1200px;
+transform: rotate(27.198deg);
+background-color: rgba(233, 245, 255, 0.50);
+margin: 200px 0 0 140px;
+position: relative;
+}
+header{
+    display: flex;
+    position: absolute;
+    top: 300px;
+}
+header .blog1{
+    width: 664px;
+    margin: 150px 0 0 140px;
+
+}
+
+header .blog1 .box1 img{
+    border-radius: 0 150px  0 0 ;
+    margin-top: 200px;
+}
+header .blog1 .box1 h2{
+    color: #474F62;
+font-family: Merriweather;
+font-size: 24px;
+font-style: normal;
+font-weight: 700;
+margin: 40px 0 0 0;
+
+}
+
+header .blog1 .box1 p{
+    color: #000;
+font-family: Gilroy;
+font-size: 18px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+margin-top: 30px;
+}
+header .blog2 {
+    width: 740px;
+    margin: 700px 0 0 160px;
+}
+
+header .blog2 .box2 img{
+    border-radius: 0 150px  0 0 ;
+    margin-top: 200px;
+}
+header .blog2 .box2 h2{
+    color: #474F62;
+font-family: Merriweather;
+font-size: 24px;
+font-style: normal;
+font-weight: 700;
+margin: 40px 0 0 0;
+
+}
+
+header .blog2 .box2 p{
+    color: #000;
+font-family: Gilroy;
+font-size: 18px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+margin-top: 30px;
+}
+.bg2{
+    width: 1645.34px;
+height: 750px;
+transform: rotate(27.2deg);
+background-image: linear-gradient(306deg, #E9F5FF 0%, rgba(245, 242, 253, 0.00) 100%, rgba(245, 242, 253, 0.10) 100%);
+margin: 800px 0 0 140px;
+position: relative;
+}
+.navbar1{
+    position: absolute;
+    top: 2600px;
+    display: flex;
+}
+.navbar1 .blog1 img{
+    width: 785.441px;
+height: 763px;
+margin: 0 0 0 135px ;
+}
+.navbar1 .blog2{
+    margin: 50px 0 0 150px;
+}
+.navbar1 .blog2 h2{
+    color: #474F62;
+font-family: Merriweather;
+font-size: 36px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+margin-bottom: 100px;
+}
+.navbar1 .blog2 ul li{
+    color: #000;
+font-family: Gilroy;
+font-size: 24px;
+font-style: normal;
+font-weight: 400;
+line-height: 150.7%; 
+letter-spacing: 0.1px;
+list-style: disc;
+}
+
+/* ------------------- */
+.bg3{
+    width: 1536.854px;
+height: 1136.163px;
+transform: rotate(27.198deg);
+    background-color: rgba(233, 245, 255, 0.50);;
+    margin: 1000px 0 0 140px;
+}
+.navbar2{
+    position: absolute;
+    top: 3600px;
+}
+.navbar2 .lg{
+    color: #474F62;
+font-family: Merriweather;
+font-size: 36px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+margin-left: 600px;
+}
+.navbar2 .blog2 {
+    width: 1644px;
+
+}
+.navbar2 .blog1  img {
+    width: 1644px;
+    margin: 100px 0 0 137px;
+    border-radius: 10px;
+}
+.navbar2 .blog2{
+    display: flex;
+    margin: 120px 0 0 120px;
+}
+.navbar2 .blog2 .box1{
+    width: 510px;
+    padding: 37px;
+    border-radius: 20px;
+    background: #FFF;
+    box-shadow: 15px 70px 100px 0px rgba(0, 0, 0, 0.06);
+    margin-left: 45px;
+}
+
+.navbar2 .blog2 .box1 img{
+    border-radius: 50%;
+    margin: 0 0 0 100px;
+}
+.navbar2 .blog2 .box1 h2{
+    color: #474F62;
+font-family: Merriweather;
+font-size: 36px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+text-align: center;
+margin-top: 25px;
+}
+.navbar2 .blog2 .box1 p{
+    color: #000;
+font-family: Gilroy;
+font-size: 18px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+margin-top: 25px;
+}
+.navbar2 .blog2 .box1:hover{
+    transform: scale(1.1);
+    transition: all 1.5s;
+    cursor: pointer;
+}
+.bg4{
+    width: 1536.854px;
+height: 700px;
+transform: rotate(5.962deg);
+    background-color: rgba(233, 245, 255, 0.50); 
+    position: relative;
+    margin-top: 200px;
+}
+.navbar3 {
+    display: flex;
+    top: 5500px;
+    position: absolute;
+}
+.navbar3 .blog1{
+    margin-left: 169px;
+}
+
+.navbar3 .blog1 img{
+    width: 500px;
+    height: 530px;
+}
+.navbar3 .blog2{
+    width: 720px;
+    margin: 0 0 0 370px;
+}
+.navbar3 .blog2 .box1 h2{
+    color: #474F62;
+font-family: Merriweather;
+font-size: 36px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+margin-bottom: 100px;
+}
+.navbar3 .blog2 .box2 p{
+    color: #000;
+    font-family: Gilroy;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal; 
+    margin-top: 20px;  
+}
+
+
+/* ---------FOOTER---------- */
+
+footer{
+    background: linear-gradient(221deg, #0B3E8C 0%, #001022 100%);
+    margin-top: 20px;
+    position: absolute;
+    width: 1900px;
+    height: 500px;
+    display: flex;
+    padding-bottom: 90px;
+}
+
+
+footer .blog1{
+    position: absolute;
+}
+footer .blog1 .box1 img{
+    width: 162px;
+height: 162px;
+    margin: 35px 0 0 134px;
+}
+footer .blog1 .box2 p{
+    color: #FFF;
+font-family: Poppins;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: 28px;
+margin: 141px 0 0 140px;
+}
+footer .blog1 .box3 {
+    display: flex;
+    margin: 35px 0 0 100px;
+}
+footer .blog1 .box3 img{
+    margin-left: 35px;
+}
+footer .blog2 {
+    position: absolute;
+    left: 400px;
+    top: 60px;
+}
+footer .blog2 .box1{
+    display: flex;
+}
+
+footer .blog2 .box1 .lin1{
+    width: 210px;
+}
+footer .blog2 .box1 .lin1 h2{
+    color: #FFF;
+font-family: Merriweather;
+font-size: 22px;
+font-style: normal;
+font-weight: 400;
+}
+footer .blog2 .box1 .lin1 a:nth-child(2){
+    color: #FFF;
+font-family: Gilroy;
+font-size: 16px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+display: block;
+text-align: start;
+margin-top: 40px;
+}
+footer .blog2 .box1 .lin1 a:nth-child(3){
+    color: #FFF;
+font-family: Gilroy;
+font-size: 16px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+display: block;
+text-align: start;
+margin-top: 20px;
+}
+footer .blog2 .box1 .lin1 a:hover{
+    color: #3772FF;
+    transition: all 0.5s;
+}
+footer .blog2 .box1 .lin2{
+    width: 190px;
+    margin-left: 80px;
+}
+footer .blog2 .box1 .lin2 h2{
+    color: #FFF;
+font-family: Merriweather;
+font-size: 22px;
+font-style: normal;
+font-weight: 400;
+}
+footer .blog2 .box1 .lin2 a:nth-child(2){
+    color: #FFF;
+font-family: Gilroy;
+font-size: 16px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+margin-top: 40px;
+display: block;
+text-align: start;
+}
+footer .blog2 .box1 .lin2 a:nth-child(3){
+    color: #FFF;
+font-family: Gilroy;
+font-size: 16px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+margin-top: 20px;
+display: block;
+text-align: start;
+}
+footer .blog2 .box1 .lin2 a:hover{
+    color: #3772FF;
+    transition: all 0.5s;
+}
+footer .blog2 .box1 .lin3{
+    width: 270px;
+    margin-left: 60px;
+}
+footer .blog2 .box1 .lin3 h2{
+    color: #FFF;
+font-family: Merriweather;
+font-size: 22px;
+font-style: normal;
+font-weight: 400;
+}
+footer .blog2 .box1 .lin3 a:nth-child(2){
+    color: #FFF;
+
+font-family: Gilroy;
+font-size: 16px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+margin-top: 40px;
+display: block;
+text-align: start;
+}
+footer .blog2 .box1 .lin3 a:nth-child(3){
+    color: #FFF;
+font-family: Gilroy;
+font-size: 16px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+margin-top: 20px;
+display: block;
+text-align: start;
+}
+footer .blog2 .box1 .lin3 a:nth-child(4){
+    color: #FFF;
+
+font-family: Gilroy;
+font-size: 16px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+margin-top: 20px;
+display: block;
+text-align: start;
+}
+footer .blog2 .box1 .lin3 a:nth-child(5){
+    color: #FFF;
+font-family: Gilroy;
+font-size: 16px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+margin-top: 20px;
+display: block;
+text-align: start;
+}
+footer .blog2 .box1 .lin3 a:hover{
+    color: #3772FF;
+    transition: all 0.5s;
+}
+footer .blog2 .box1 .lin4{
+    width: 200px;
+    margin-left: 90px;
+}
+footer .blog2 .box1 .lin4 h2{
+    color: #FFF;
+font-family: Merriweather;
+font-size: 22px;
+font-style: normal;
+font-weight: 400;
+}
+footer .blog2 .box1 .lin4 a:nth-child(2){
+    color: #FFF;
+font-family: Gilroy;
+font-size: 16px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+margin-top: 40px;
+display: block;
+text-align: start;
+}
+footer .blog2 .box1 .lin4 a:hover{
+    color: #3772FF;
+    transition: all 0.5s;
+}
+footer .blog2 .box2{
+   text-align: center;
+   margin-top: 140px;
+}
+footer .blog2 .box2 p{
+    color: #FFF;
+font-family: Gilroy;
+font-size: 14px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+footer .blog3{
+    margin: 336px 0 0 90px;
+    position: absolute;
+    left: 1400px;
+    top: 15px;
+}
+footer .blog3 .box1 {
+    display: flex;
+    align-items: center;
+}
+footer .blog3 .box1 img{
+    width: 44px;
+    height: 44px;
+    padding: 8px;
+    background-color: #ffffff;
+    border-radius: 10px;   
+}
+footer .blog3 .box1 a{
+    color: #F5FAFE;
+text-align: right;
+font-family: Gilroy;
+font-size: 20px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+margin-left: 20px;
+}
+footer .blog3 .box1 a:hover{
+    color: #3772FF;
+    transition: all 0.5s;
+}
+footer .blog3 .box2 {
+    display: flex;
+    align-items: center;
+    margin-top: 22px;
+}
+footer .blog3 .box2 img{
+    width: 44px;
+    height: 44px;
+    padding: 8px;
+    background-color: #ffffff;
+    border-radius: 10px;   
+}
+footer .blog3 .box2 a{
+    color: #F5FAFE;
+text-align: right;
+font-family: Gilroy;
+font-size: 20px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+margin-left: 20px;
+}
+footer .blog3 .box2 a:hover{
+    color: #3772FF;
+    transition: all 0.5s;
+}
