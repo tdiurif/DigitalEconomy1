@@ -1,24 +1,25 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta n ame="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/elevnstyle.css">
+    <link rel="stylesheet" href="{%  static 'css/elevnstyle.css' %}">
     <title>Document</title>
 </head>
 <body>
     <div class="menu">
         <ul>
             <li>
-                <a href="index.html">
-                    <img src="img/logo.png" alt="">
+                <a href="{% url 'home' %}">
+                    <img src="{% static 'img/logo.png' %}" alt="">
                     <p>Raqamli iqtisodiyot</p>
                 </a>
             </li>
-            <li><a href="twoindex.html">Fakultetlar haqida</a></li>
-            <li><a href="threeindex.html">Ta’lim</a></li>
-            <li><a href="fiveindex.html">Kafedralar</a></li>
-            <li><a href="sixindex.html">Tadqiqotlar</a></li>
+            <li><a href="{% url 'about' %}">Fakultetlar haqida</a></li>
+            <li><a href="{% url 'tech' %}">Ta’lim</a></li>
+            <li><a href="{% url 'departament' %}">Kafedralar</a></li>
+            <li><a href="{% url 'tadqiqot' %}">Tadqiqotlar</a></li>
         </ul>
     </div>
     <div class="num">
@@ -50,31 +51,31 @@
             <a href="#" class="box1">
                 <h2>Talabalar hayoti</h2>
                 <div class="bc">
-                    <img src="img/oynaonbir1.png" alt="">
+                    <img src="{% static 'img/oynaonbir1.png' %}" alt="">
                 </div>
             </a>
             <a href="#" class="box1">
                 <h2>Tadqiqotlar</h2>
                 <div class="bc1">
-                    <img src="img/oynaonbir2.png" alt="">
+                    <img src="{%  static 'img/oynaonbir2.png' %}" alt="">
                 </div>
             </a>
             <a href="#" class="box1">
                 <h2>analiz va statistika</h2>
                 <div class="bc2">
-                    <img src="img/oynaonbir3.png" alt="">
+                    <img src="{%  static 'img/oynaonbir3.png' %}" alt="">
                 </div>
             </a>
             <a href="#" class="box1">
                 <h2>texnologiya</h2>
                 <div class="bc3">
-                    <img src="img/oynaonbir4.png" alt="">
+                    <img src="{%  static 'img/oynaonbir4.png' %}" alt="">
                 </div>
             </a>
             <a href="#" class="box1">
                 <h2>yangiliklar</h2>
                 <div class="bc4">
-                    <img src="img/oynaonbir5.png" alt="">
+                    <img src="{%  static 'img/oynaonbir5.png' %}" alt="">
                 </div>
             </a>
         </div>
@@ -85,20 +86,20 @@
             <div class="blog1">
                 <div class="box1">
                     <div class="rasm1">
-                        <img src="img/oyna_11_1.png" alt="">
-                        <img src="img/oyna_11_2.png" alt="">
+                        <img src="{%  static 'img/oyna_11_1.png' %}" alt="">
+                        <img src="{%  static 'img/oyna_11_2.png' %}" alt="">
                     </div>
                     <div class="rasm2">
-                        <img src="img/oyna_11_3.png" alt="">
+                        <img src="{%  static 'img/oyna_11_3.png' %}" alt="">
                     </div>
                 </div>
                 <div class="box2">
                     <div class="rasm1">
-                        <img src="img/oyna_11_4.png" alt="">
+                        <img src="{%  static 'img/oyna_11_4.png' %}" alt="">
                     </div>
                     <div class="rasm2">
-                        <img src="img/oyna_11_5.png" alt="">
-                        <img src="img/oyna_11_6.png" alt="">
+                        <img src="{%  static 'img/oyna_11_5.png' %}" alt="">
+                        <img src="{%  static 'img/oyna_11_6.png' %}" alt="">
                     </div>
                 </div>
             </div>
