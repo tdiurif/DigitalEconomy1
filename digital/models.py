@@ -106,7 +106,7 @@ class ProfessorModel(models.Model):
 class TeachersModel(models.Model):
     name = models.CharField(max_length=255)
     image = models.ImageField(upload_to='static/img/professor/')
-    position = models.ForeignKey(DepartamentModels, on_delete=models.PROTECT)
+    position = models.ForeignKey(DepartamentModels, on_delete=models.PROTECT,default=1)
     body = RichTextField(blank=True, null=True)
     email = models.EmailField(blank=True, null=True)
     number = models.CharField(max_length=255, blank=True, null=True)
@@ -130,7 +130,7 @@ class AlumniModels(models.Model):
     info = models.TextField(blank=True, null=True)
     image = models.ImageField(upload_to='static/img/alumni/')
     comment = RichTextField(blank=True, null=True)
-    Teach = models.CharField(blank=True, null=True)
+    teach = models.CharField(max_length=255,blank=True, null=True)
 
     def __str__(self):
         return f'{self.name}    |    {self.position}'

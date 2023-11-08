@@ -1,24 +1,25 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>bechinchi oyna</title>
-    <link rel="stylesheet" href="css/fivestyle.css">
+    <link rel="stylesheet" href="{%  static 'css/fivestyle.css' %}">
 </head>
 <body>
     <div class="menu">
         <ul>
             <li>
-                <a href="index.html">
-                    <img src="img/logo.png" alt="">
+                <a href="{% url 'home'%}">
+                    <img src="{%  static 'img/logo.png' %}" alt="">
                     <p>Raqamli iqtisodiyot</p>
                 </a>
             </li>
-            <li><a href="twoindex.html">Fakultetlar haqida</a></li>
-            <li><a href="threeindex.html">Ta’lim</a></li>
-            <li><a href="fiveindex.html">Kafedralar</a></li>
-            <li><a href="sixindex.html">Tadqiqotlar</a></li>
+            <li><a href="{% url 'about' %}">Fakultet haqida</a></li>
+                <li><a href="{% url 'tech' %}">Ta'lim</a></li>
+                <li><a href="{% url 'departament' %}">Kafedralar</a></li>
+                <li><a href="{% url 'tadqiqot' %}">Tadqiqotlar</a></li>
         </ul>
     </div>
     <div class="num">
@@ -26,29 +27,30 @@
             Kafedralar
         </h2>
     </div>
+    {% for i in departaments %}
+        {% if i.id in list1 %}
     <div class="navbar1">
         <div class="blog1">
             <div class="box1">
                 <span></span>
-                <h2>Iqtisodiy xavfsizlik</h2>
+                <h2>{{ i.title}}</h2>
             </div>
             <div class="box2">
-                <a href="#">Iqtisodiy xavfsizlik turlari </a>
+                <a href="#">{{i.name}} turlari </a>
                 <p>
-                    State and political figure, the first president of the Republic of Uzbekistan. Hero Of Uzbekistan (1994). Supreme Commander-in-chief of the Armed Forces of Uzbekistan and winner of the presidential elections of 2007, winner of the presidential elections of 2015. The first secretary of the Communist Party of Uzbekistan until the declaration of independence. President of Uzbekistan from 1991 to the end of his life. Under the leadership of Islam Karimov, Uzbekistan had its own constitution, was recognized in the UN and had equal relations with the CIS countries.
+                    {{ i.body }}
                 </p>
-                <p>
-                    State and political figure, the first president of the Republic of Uzbekistan. Hero Of Uzbekistan (1994). Supreme Commander-in-chief of the Armed Forces of Uzbekistan and winner of the presidential elections of 2007, winner of the presidential elections of 2015. The first secretary of the Communist Party of Uzbekistan until the declaration of independence. President of Uzbekistan from 1991 to the end of his life. Under the leadership of Islam Karimov, Uzbekistan had its own constitution, was recognized in the UN and had equal relations with the CIS countries.
-                </p>
+
             </div>
         </div>
         <div class="blog2">
-            <img src="img/bechinchi oyna1.png" alt="">
+            <img src="{{ i.image.url }}" alt="">
         </div>
     </div>
+        {% else %}
     <div class="navbar2">
         <div class="blog2">
-            <img src="img/bechinchi oyna 2.png" alt="">
+            <img src="{{ i.image.url }}" alt="">
         </div>
         <div class="blog1">            
             <div class="box1">
@@ -66,46 +68,8 @@
             </div>
         </div>
     </div>
-    <div class="navbar3">
-        <div class="blog1">
-            <div class="box1">
-                <span></span>
-                <h2>Iqtisodiy xavfsizlik</h2>
-            </div>
-            <div class="box2">
-                <a href="#">Iqtisodiy xavfsizlik turlari </a>
-                <p>
-                    State and political figure, the first president of the Republic of Uzbekistan. Hero Of Uzbekistan (1994). Supreme Commander-in-chief of the Armed Forces of Uzbekistan and winner of the presidential elections of 2007, winner of the presidential elections of 2015. The first secretary of the Communist Party of Uzbekistan until the declaration of independence. President of Uzbekistan from 1991 to the end of his life. Under the leadership of Islam Karimov, Uzbekistan had its own constitution, was recognized in the UN and had equal relations with the CIS countries.
-                </p>
-                <p>
-                    State and political figure, the first president of the Republic of Uzbekistan. Hero Of Uzbekistan (1994). Supreme Commander-in-chief of the Armed Forces of Uzbekistan and winner of the presidential elections of 2007, winner of the presidential elections of 2015. The first secretary of the Communist Party of Uzbekistan until the declaration of independence. President of Uzbekistan from 1991 to the end of his life. Under the leadership of Islam Karimov, Uzbekistan had its own constitution, was recognized in the UN and had equal relations with the CIS countries.
-                </p>
-            </div>
-        </div>
-        <div class="blog2">
-            <img src="img/bechinchi oyna 3.png" alt="">
-        </div>
-    </div>
-    <div class="navbar4">
-        <div class="blog2">
-            <img src="img/bechinchi oyna 4.png" alt="">
-        </div>
-        <div class="blog1">            
-            <div class="box1">
-                <span></span>
-                <h2>Iqtisodiy xavfsizlik</h2>
-            </div>
-            <div class="box2">
-                <a href="#">Iqtisodiy xavfsizlik turlari </a>
-                <p>
-                    State and political figure, the first president of the Republic of Uzbekistan. Hero Of Uzbekistan (1994). Supreme Commander-in-chief of the Armed Forces of Uzbekistan and winner of the presidential elections of 2007, winner of the presidential elections of 2015. The first secretary of the Communist Party of Uzbekistan until the declaration of independence. President of Uzbekistan from 1991 to the end of his life. Under the leadership of Islam Karimov, Uzbekistan had its own constitution, was recognized in the UN and had equal relations with the CIS countries.
-                </p>
-                <p>
-                    State and political figure, the first president of the Republic of Uzbekistan. Hero Of Uzbekistan (1994). Supreme Commander-in-chief of the Armed Forces of Uzbekistan and winner of the presidential elections of 2007, winner of the presidential elections of 2015. The first secretary of the Communist Party of Uzbekistan until the declaration of independence. President of Uzbekistan from 1991 to the end of his life. Under the leadership of Islam Karimov, Uzbekistan had its own constitution, was recognized in the UN and had equal relations with the CIS countries.
-                </p>
-            </div>
-        </div>
-    </div>
+        {% endif %}
+    {% endfor %}
   
     <footer>
 

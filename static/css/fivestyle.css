@@ -76,6 +76,11 @@ body{
     display: flex;
     margin: 90px 0 0 140px;
 }
+.navbar1:hover{
+    transform: scale(1.1);
+    transition: all 1.2s;
+    cursor: pointer;
+}
 .navbar1 .blog1 .box1 span{
     width: 102px;
 height: 5px;
@@ -131,6 +136,11 @@ margin-left: 273px;
     padding: 100px 150px 90px 60px;
     display: flex;
     margin: 230px 0 0 140px;
+}
+.navbar2:hover{
+    transform: scale(1.1);
+    transition: all 1.2s;
+    cursor: pointer;
 }
 .navbar2 .blog1{
     width: 710px;
@@ -193,6 +203,11 @@ height: 580px;
     display: flex;
     margin: 220px 0 0 140px;
 }
+.navbar3:hover{
+    transform: scale(1.1);
+    transition: all 1.2s;
+    cursor: pointer;
+}
 .navbar3 .blog1 .box1 span{
     width: 102px;
 height: 5px;
@@ -248,6 +263,11 @@ margin-left: 273px;
     padding: 100px 150px 90px 60px;
     display: flex;
     margin: 230px 0 0 140px;
+}
+.navbar4:hover{
+    transform: scale(1.1);
+    transition: all 1.2s;
+    cursor: pointer;
 }
 .navbar4 .blog1{
     width: 710px;
