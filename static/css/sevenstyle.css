@@ -254,9 +254,14 @@ body{
 .curr2{
     width: 482px;
     height: 564px;
-    background-image: url(../img/7\ oyna\ 5\ rasm.png);
+    background-image: url();
 }
-
+.curr2 img:nth-child(1){
+    position: absolute;
+}
+.curr2 img:nth-child(2){
+    position: relative;
+}
 .jus1{
     margin-left: 336px;
     margin-top: 55px;   
