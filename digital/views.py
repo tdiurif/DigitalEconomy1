@@ -40,3 +40,5 @@ def TadqiqotlarView(request):
 
 def FacultyLifeView(request):
     return render(request,'elevnindex.html')
+def FacultySportView(request):
+    return render(request,'tuwelfindex.html')

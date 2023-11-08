@@ -1,16 +1,17 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta n ame="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/elevnstyle.css">
+    <link rel="stylesheet" href="{%  static 'css/elevnstyle.css' %}">
     <title>Document</title>
 </head>
 <body>
     <div class="menu">
         <ul>
             <li>
-                <a href="index.html">
+                <a href="{% url 'home' %}">
                     <img src="img/logo.png" alt="">
                     <p>Raqamli iqtisodiyot</p>
                 </a>
