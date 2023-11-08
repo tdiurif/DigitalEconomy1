@@ -37,3 +37,6 @@ def DepartamentView(request):
 
 def TadqiqotlarView(request):
     return render(request, 'sixindex.html')
+
+def FacultyLifeView(request):
+    return render(request,'elevnindex.html')

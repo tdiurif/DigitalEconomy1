@@ -1,25 +1,26 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ijtimoiy loyihalar</title>
-    <link rel="stylesheet" href="css/sevenstyle.css">
+    <link rel="stylesheet" href="{%  static 'css/sevenstyle.css' %}">
 </head>
 <body>
     <div class="box">
         <div class="menu">
             <ul>
                 <li>
-                    <a href="index.html">
-                        <img src="img/logo.png" alt="">
+                    <a href="{% url 'home' %}">
+                        <img src="{%  static 'img/logo.png' %}" alt="">
                         <p>Raqamli iqtisodiyot</p>
                     </a>
                 </li>
-                <li><a href="twoindex.html">Fakultetlar haqida</a></li>
-                <li><a href="threeindex.html">Ta’lim</a></li>
-                <li><a href="fiveindex.html">Kafedralar</a></li>
-                <li><a href="sixindex.html">Tadqiqotlar</a></li>
+                <li><a href="{% url 'about' %}">Fakultetlar haqida</a></li>
+                <li><a href="{% url 'tech' %}">Ta’lim</a></li>
+                <li><a href="{% url 'departament' %}">Kafedralar</a></li>
+                <li><a href="{% url 'tadqiqot' %}">Tadqiqotlar</a></li>
             </ul>
         </div>
         <h2 class="num">
