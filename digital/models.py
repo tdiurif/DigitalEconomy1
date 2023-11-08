@@ -118,7 +118,7 @@ class TeachersModel(models.Model):
 
 class BitiruvchilarModel(models.Model):
     name = models.CharField(max_length=255, blank=True, null=True)
-    ball = models.DecimalField(max_digits=10, decimal_places=10)
+    ball = models.DecimalField(max_digits=4, decimal_places=4)
 
     def __str__(self):
         return f'{self.name}   |    {self.ball}'
@@ -130,7 +130,7 @@ class AlumniModels(models.Model):
     info = models.TextField(blank=True, null=True)
     image = models.ImageField(upload_to='static/img/alumni/')
     comment = RichTextField(blank=True, null=True)
-    Teach = models.CharField(blank=True, null=True)
+    Teach = models.CharField(blank=True, null=True, max_length=255)
 
     def __str__(self):
         return f'{self.name}    |    {self.position}'
@@ -139,7 +139,7 @@ class AlumniModels(models.Model):
 class Comment(models.Model):
     title = models.CharField(blank=True, null=True, max_length=255)
     body = RichTextField(null=True, blank=True)
-    image = models.ImageField(upload_to='static/img/comment/')
+    image = models.ImageField(upload_to='static/img/comment/', null=True, blank=True)
 
     def __str__(self):
         return f'{self.title}'

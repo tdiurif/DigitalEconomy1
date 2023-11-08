@@ -198,6 +198,7 @@ margin-left: 600px;
 .navbar2 .blog2 {
     width: 1644px;
 
+
 }
 .navbar2 .blog1  img {
     width: 1644px;
@@ -206,6 +207,9 @@ margin-left: 600px;
 }
 .navbar2 .blog2{
     display: flex;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
     margin: 120px 0 0 120px;
 }
 .navbar2 .blog2 .box1{

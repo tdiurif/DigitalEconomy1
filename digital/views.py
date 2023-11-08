@@ -1,7 +1,7 @@
 from django.shortcuts import render
 
 from digital.models import ImageModels
-from .models import NewsModel, TeachModels, ImageNextMOdels, ImageActiveMOdels, ImagePrevMOdels
+from .models import NewsModel, TeachModels, ImageNextMOdels, ImageActiveMOdels, ImagePrevMOdels, ProfessorModel
 
 
 def HomeView(request):
@@ -21,7 +21,13 @@ def HomeView(request):
 
 
 def FacultyAbout(request):
-    return render(request, 'twoindex.html')
+    professor = ProfessorModel.objects.all()
+    lis = [2,3,4,5,6]
+    context = {
+        'professors': professor,
+        'lis': lis
+    }
+    return render(request, 'twoindex.html', context)
 
 
 def TechView(request):
