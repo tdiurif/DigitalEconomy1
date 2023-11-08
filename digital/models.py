@@ -10,9 +10,10 @@ class NewsModel(models.Model):
 
 
 class DepartamentModels(models.Model):
-    title = models.CharField(max_length=250, blank=True, null=True, )
+    title = models.CharField(max_length=250, blank=True, null=True)
     name = models.CharField(max_length=255, blank=True, null=True)
     image = models.ImageField(upload_to='static/img/departament/', blank=True, null=True)
+    image_all = models.ImageField(upload_to='static/img/departament/', blank=True, null=True)
     body = RichTextField(blank=True, null=True)
 
     def __str__(self):
