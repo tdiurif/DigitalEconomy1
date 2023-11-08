@@ -218,11 +218,12 @@
     </div>
   <div class="wrapper1">
     <ul class="carusel">
+        {% for news in news %}
       <li class="card">
-        <div class="img"><img src="{%  static 'img/oyna1.2.1.jpg' %}" alt=""></div>
+        <div class="img"><img src="{{ news.image.url }}" alt=""></div>
         <div class="list">
-          <p>TechGirls Summer Exchange Program 2024 in the USA | Fully Funded </p>
-        <h3>The TechGirls will cover</h3>
+          <p>{{ news.name }} </p>
+        <h3>{{ news.title }}</h3>
         <div class="otish">
           <a href="">to’liq o’qish
             <img src="image/Vector.png" alt="">
@@ -230,102 +231,7 @@
         </div>
         </div>
       </li>
-      <li class="card">
-        <div class="img"><img src="{%  static 'img/ouna1.1.2.jpg' %}" alt=""></div>
-        <div class="list">
-          <p> </p>
-        <h3>2023-yil 31-oktabr kuni Toshkent davlat iqtisodiyot universitetining Raqamli iqtisodiyot fakulteti dekan muovini dots. D. Xoshimova va...</h3>
-        <div class="otish">
-          <a href="">to’liq o’qish
-            <img src="image/Vector.png" alt="">
-          </a>
-        </div>
-        </div>
-      </li>
-      <li class="card">
-        <div class="img"><img src="{% static 'img/oyna1.1.5.jpg' %}" alt=""></div>
-        <div class="list">
-          <p>Talabalr taqdirlandi</p>
-        <h3>Xalqlar do'stligi san'at saroyida bugun  bo'lib o'tadigan  "Sho'rdanak"... </h3>
-        <div class="otish">
-          <a href="">to’liq o’qish
-            <img src="image/Vector.png" alt="">
-          </a>
-        </div>
-        </div>
-      </li>
-      <li class="card">
-        <div class="img"><img src="{%  static 'img/11 oyna 11 rasm.png' %}" alt=""></div>
-        <div class="list">
-          <p>Talabalr taqdirlandi</p>
-        <h3>Xalqaro anjumanda raqamli iqtisodiyot fakulteti talabalari g’olib bo’ldi </h3>
-        <div class="otish">
-          <a href="">to’liq o’qish
-            <img src="image/Vector.png" alt="">
-          </a>
-        </div>
-        </div>
-      </li>
-      <li class="card">
-        <div class="img"><img src="{%  static 'img/11 oyna 11 rasm.png' %}" alt=""></div>
-        <div class="list">
-          <p>Talabalr taqdirlandi</p>
-        <h3>Xalqaro anjumanda raqamli iqtisodiyot fakulteti talabalari g’olib bo’ldi </h3>
-        <div class="otish">
-          <a href="">to’liq o’qish
-            <img src="image/Vector.png" alt="">
-          </a>
-        </div>
-        </div>
-      </li>
-      <li class="card">
-        <div class="img"><img src="{%  static 'img/11 oyna 11 rasm.png' %}" alt=""></div>
-        <div class="list">
-          <p>Talabalr taqdirlandi</p>
-        <h3>Xalqaro anjumanda raqamli iqtisodiyot fakulteti talabalari g’olib bo’ldi </h3>
-        <div class="otish">
-          <a href="">to’liq o’qish
-            <img src="image/Vector.png" alt="">
-          </a>
-        </div>
-        </div>
-      </li>
-      <li class="card">
-        <div class="img"><img src="{%  static 'img/11 oyna 11 rasm.png' %}" alt=""></div>
-        <div class="list">
-          <p>Talabalr taqdirlandi</p>
-        <h3>Xalqaro anjumanda raqamli iqtisodiyot fakulteti talabalari g’olib bo’ldi </h3>
-        <div class="otish">
-          <a href="">to’liq o’qish
-            <img src="image/Vector.png" alt="">
-          </a>
-        </div>
-        </div>
-      </li>
-      <li class="card">
-        <div class="img"><img src="{%  static 'img/11 oyna 11 rasm.png' %}" alt=""></div>
-        <div class="list">
-          <p>Talabalr taqdirlandi</p>
-        <h3>Xalqaro anjumanda raqamli iqtisodiyot fakulteti talabalari g’olib bo’ldi </h3>
-        <div class="otish">
-          <a href="">to’liq o’qish
-            <img src="image/Vector.png" alt="">
-          </a>
-        </div>
-        </div>
-      </li>
-      <li class="card">
-        <div class="img"><img src="{% static 'img/11 oyna 11 rasm.png' %}" alt=""></div>
-        <div class="list">
-          <p>Talabalr taqdirlandi</p>
-        <h3>Xalqaro anjumanda raqamli iqtisodiyot fakulteti talabalari g’olib bo’ldi </h3>
-        <div class="otish">
-          <a href="">to’liq o’qish
-            <img src="image/Vector.png" alt="">
-          </a>
-        </div>
-        </div>
-      </li>
+      {% endfor %}
       <div class="button">
         <button class="butttonImg1" id="prev">
           <img src="img/slyd.png" alt="">

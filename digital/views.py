@@ -15,6 +15,7 @@ def HomeView(request):
         "imgn":imgn,
         "imga":imga,
         "imgp":imgp,
+        "news":news
     })
 
 
