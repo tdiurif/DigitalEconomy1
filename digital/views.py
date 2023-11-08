@@ -45,6 +45,7 @@ def DepartamentView(request):
     })
 
 
+
 def TadqiqotlarView(request):
     return render(request, 'sixindex.html')
 
