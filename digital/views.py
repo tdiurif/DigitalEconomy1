@@ -46,5 +46,7 @@ def FacultyLifeView(request):
 
 def FacultySportView(request):
     return render(request, 'tuwelfindex.html')
+
+
 def SocialProjectView(request):
-    return render(request,'sevenindex.html')
+    return render(request, 'sevenindex.html')
