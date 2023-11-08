@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ijtimoiy loyihalar</title>
-    <link rel="stylesheet" href="{%  static 'css/sevenstyle.css' %}">
+    <link rel="stylesheet" href="{% static 'css/sevenstyle.css' %}">
 </head>
 <body>
     <div class="box">
@@ -13,14 +13,14 @@
             <ul>
                 <li>
                     <a href="{% url 'home' %}">
-                        <img src="{%  static 'img/logo.png' %}" alt="">
+                        <img src="{% static 'img/logo.png' %}" alt="">
                         <p>Raqamli iqtisodiyot</p>
                     </a>
                 </li>
-                <li><a href="{% url 'about' %}">Fakultetlar haqida</a></li>
-                <li><a href="{% url 'tech' %}">Ta’lim</a></li>
-                <li><a href="{% url 'departament' %}">Kafedralar</a></li>
-                <li><a href="{% url 'tadqiqot' %}">Tadqiqotlar</a></li>
+                <li><a href="twoindex.html">Fakultetlar haqida</a></li>
+                <li><a href="threeindex.html">Ta’lim</a></li>
+                <li><a href="fiveindex.html">Kafedralar</a></li>
+                <li><a href="sixindex.html">Tadqiqotlar</a></li>
             </ul>
         </div>
         <h2 class="num">
@@ -38,7 +38,7 @@
             </div>
             <div class="name41">
                 <div>
-                    <div style="margin-left: 67px; width: 92px; height: 78px;"> <img src="img/7 oyna 1 rasm.png" style="width: 92px; height: 78px;"> </div>
+                    <div style="margin-left: 67px; width: 92px; height: 78px;"> <img src="{%  static 'img/sevn1.png' %}" style="width: 92px; height: 78px;"> </div>
                     <div class="ilon1">
                         Mutaxasislar
                     </div>
@@ -47,7 +47,7 @@
                     </div>
                 </div>
                 <div style="margin-left: 295px;">
-                    <div style="margin-left: 72px; width: 81px; height: 78px;"> <img src="img/7 oyna 2 rasm.png" style="width: 81px; height: 78px;"></div>
+                    <div style="margin-left: 72px; width: 81px; height: 78px;"> <img src="{% static 'img/sevn2.png' %}" style="width: 81px; height: 78px;"></div>
                     <div class="lion1">
                         Muvaffaqiyatli loyihalar
                     </div>
@@ -56,7 +56,7 @@
                     </div>
                 </div>
                 <div style="margin-left: 295px;">
-                    <div style="margin-left: 73px; width: 78px; height: 78px;"><img src="img/7 oyna 3 rasm.png" style="width: 78px; height: 78px;"> </div>
+                    <div style="margin-left: 73px; width: 78px; height: 78px;"><img src="{% static 'img/sevn3.png' %}" style="width: 78px; height: 78px;"> </div>
                     <div class="tig1">
                         Loyihalar
                     </div>
@@ -80,7 +80,8 @@
         <div class="box21">
             <div class="curr1">
                 <div class="curr2">
-                    <img src="img/7 oyna 4 rasm.png" style="margin-top: 62px; margin-left: 162px;">
+                    <img src="{% static 'img/sevn5.png' %}" alt="">
+                    <img src="{% static 'img/sevn4.png' %}" style="margin-top: 62px; margin-left: 162px;">
                 </div>
             </div>
             <div class="jus1">

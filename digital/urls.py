@@ -1,6 +1,6 @@
 from django.urls import path
 
-from digital.views import HomeView,FacultyAbout,TechView,DepartamentView,TadqiqotlarView,FacultyLifeView,FacultySportView
+from digital.views import HomeView,FacultyAbout,TechView,DepartamentView,TadqiqotlarView,FacultyLifeView,FacultySportView,SocialProjectView
 
 urlpatterns=[
     path("",HomeView,name="home"),
@@ -10,4 +10,5 @@ urlpatterns=[
     path("tadqiqotlar/",TadqiqotlarView,name="tadqiqot"),
     path("facultylife/",FacultyLifeView,name="faculty_life"),
     path("facultysport/",FacultySportView,name="faculty_sport"),
+    path("socialproject/",SocialProjectView,name="social_project"),
 ]
