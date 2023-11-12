@@ -211,6 +211,7 @@ margin-left: 600px;
     grid-template-columns: repeat(3, 1fr);
     gap: 2rem;
     margin: 120px 0 0 120px;
+
 }
 .navbar2 .blog2 .box1{
     width: 510px;
