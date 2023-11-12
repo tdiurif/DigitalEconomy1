@@ -130,7 +130,7 @@ class AlumniModels(models.Model):
     info = models.TextField(blank=True, null=True)
     image = models.ImageField(upload_to='static/img/alumni/')
     comment = RichTextField(blank=True, null=True)
-    Teach = models.CharField(blank=True, null=True)
+    Teach = models.CharField(blank=True, null=True, max_length=255)
 
     def __str__(self):
         return f'{self.name}    |    {self.position}'

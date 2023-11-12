@@ -21,6 +21,10 @@ def HomeView(request):
 
 
 def FacultyAbout(request):
+    lis = [1, 2, 3, 4, 5, 6]
+    context = {
+        'lis': lis
+    }
     return render(request, 'twoindex.html')
 
 
@@ -33,17 +37,16 @@ def TechView(request):
 
 
 def DepartamentView(request):
-    departaments=DepartamentModels.objects.all()
-    list1=[]
-    for i in range(1,len(departaments)+1):
-        if i%2==0:
+    departaments = DepartamentModels.objects.all()
+    list1 = []
+    for i in range(1, len(departaments) + 1):
+        if i % 2 == 0:
             list1.append(i)
 
-    return render(request, 'fiveindex.html',{
-        "departaments":departaments,
-        "list1":list1
+    return render(request, 'fiveindex.html', {
+        "departaments": departaments,
+        "list1": list1
     })
-
 
 
 def TadqiqotlarView(request):
@@ -61,5 +64,6 @@ def FacultySportView(request):
 def SocialProjectView(request):
     return render(request, 'sevenindex.html')
 
+
 def ScoreBallsView(request):
-    return render(request,'nineindex.html')
+    return render(request, 'nineindex.html')
