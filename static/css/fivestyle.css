@@ -74,10 +74,10 @@ body{
     box-shadow: 15px 70px 100px 0px rgba(0, 0, 0, 0.06);
     padding: 100px 150px 90px 60px;
     display: flex;
-    margin: 90px 0 0 140px;
+   margin: 100px 0 0 140px;
 }
 .navbar1:hover{
-    transform: scale(1.1);
+    transform: scale(1.03);
     transition: all 1.2s;
     cursor: pointer;
 }
@@ -135,10 +135,10 @@ margin-left: 273px;
     box-shadow: 15px 70px 100px 0px rgba(0, 0, 0, 0.06);
     padding: 100px 150px 90px 60px;
     display: flex;
-    margin: 230px 0 0 140px;
+    margin: 150px 0 0 140px;
 }
 .navbar2:hover{
-    transform: scale(1.1);
+    transform: scale(1.03);
     transition: all 1.2s;
     cursor: pointer;
 }
@@ -201,10 +201,10 @@ height: 580px;
     box-shadow: 15px 70px 100px 0px rgba(0, 0, 0, 0.06);
     padding: 100px 150px 90px 60px;
     display: flex;
-    margin: 220px 0 0 140px;
+    margin: 150px 0 0 140px;
 }
 .navbar3:hover{
-    transform: scale(1.1);
+    transform: scale(1.03);
     transition: all 1.2s;
     cursor: pointer;
 }
@@ -262,10 +262,10 @@ margin-left: 273px;
     box-shadow: 15px 70px 100px 0px rgba(0, 0, 0, 0.06);
     padding: 100px 150px 90px 60px;
     display: flex;
-    margin: 230px 0 0 140px;
+    margin: 150px 0 0 140px;
 }
 .navbar4:hover{
-    transform: scale(1.1);
+    transform: scale(1.03);
     transition: all 1.2s;
     cursor: pointer;
 }
