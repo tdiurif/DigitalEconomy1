@@ -1,44 +1,53 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     text-decoration: none;
     list-style: none;
 }
-@font-face{
+
+@font-face {
     font-family: Gilroy;
     src: url(../font/Gilroy-UltraLight.ttf);
 }
-@font-face{
+
+@font-face {
     font-family: Merriweather;
     src: url(../font/MERRIWEATHER-BOLD.TTF)
 }
-body{
+
+body {
     max-width: 1920px;
     background-color: #FAFDFF;
 }
-.menu{
+
+.menu {
     border-bottom: 1px solid #3772FF;
 }
-.menu{
+
+.menu {
     border-bottom: 1px solid #3772FF;
 }
+
 .menu ul {
     display: flex;
     align-items: center;
     padding: 10px;
     margin: 45px 0 0 300px;
 }
-.menu ul li:nth-child(1) a{
+
+.menu ul li:nth-child(1) a {
     display: flex;
     align-items: center;
 }
-.menu ul li:nth-child(1) img{
+
+.menu ul li:nth-child(1) img {
     width: 50px;
     height: 50px;
     margin-right: 10px;
 }
-.menu ul li a{
+
+.menu ul li a {
     color: #000;
     font-family: Gilroy;
     text-align: center;
@@ -49,7 +58,8 @@ body{
     padding: 10px;
     cursor: pointer;
 }
-.menu ul li a:hover{
+
+.menu ul li a:hover {
     color: #3772FF;
     transition: all 0.5s;
 }
@@ -69,24 +79,28 @@ body{
 
 
 /* ------------------ */
-.nav{
+.nav {
     background-color: #e7f4ff;
     padding: 30px 100px 135px 51px;
     margin: 40px 0 0 90px;
     width: 1743px;
 }
-.navbar1 .blog1{
+
+.navbar1 .blog1 {
     display: flex;
 }
-.navbar1{
+
+.navbar1 {
     margin-left: 170px;
 }
-.navbar1 .blog1 .box1{
+
+.navbar1 .blog1 .box1 {
     width: 125px;
     height: 84px;
     background: #021D41;
 }
-.navbar1 .blog1 .box1 p{
+
+.navbar1 .blog1 .box1 p {
     padding: 25px 18px;
     color: #FFF;
     font-family: Gilroy;
@@ -95,11 +109,13 @@ body{
     font-weight: 400;
     line-height: normal;
 }
-.navbar1 .blog1 .box2{
+
+.navbar1 .blog1 .box2 {
     width: 179px;
     background: rgba(134, 158, 197, 0.74);
 }
-.navbar1 .blog1 .box2 p{
+
+.navbar1 .blog1 .box2 p {
     color: #FFF;
     font-family: Gilroy;
     font-size: 16px;
@@ -108,11 +124,13 @@ body{
     line-height: normal;
     padding: 30px 40px;
 }
-.navbar1 .blog1 .box3{
+
+.navbar1 .blog1 .box3 {
     width: 200px;
     background: #021D41;
 }
-.navbar1 .blog1 .box3 p{
+
+.navbar1 .blog1 .box3 p {
     color: #FFF;
     font-family: Gilroy;
     font-size: 16px;
@@ -121,11 +139,13 @@ body{
     line-height: normal;
     padding: 20px 20px;
 }
-.navbar1 .blog1 .box4{
+
+.navbar1 .blog1 .box4 {
     width: 200px;
     background: rgba(134, 158, 197, 0.74);
 }
-.navbar1 .blog1 .box4 p{
+
+.navbar1 .blog1 .box4 p {
     color: #FFF;
     font-family: Gilroy;
     font-size: 16px;
@@ -134,11 +154,13 @@ body{
     line-height: normal;
     padding: 30px 20px;
 }
-.navbar1 .blog1 .box5{
+
+.navbar1 .blog1 .box5 {
     width: 200px;
     background: #021D41;
 }
-.navbar1 .blog1 .box5 p{
+
+.navbar1 .blog1 .box5 p {
     color: #FFF;
     font-family: Gilroy;
     font-size: 16px;
@@ -147,11 +169,13 @@ body{
     line-height: normal;
     padding: 30px 20px;
 }
-.navbar1 .blog1 .box6{
+
+.navbar1 .blog1 .box6 {
     width: 200px;
     background: rgba(134, 158, 197, 0.74);
 }
-.navbar1 .blog1 .box6 p{
+
+.navbar1 .blog1 .box6 p {
     color: #FFF;
     font-family: Gilroy;
     font-size: 16px;
@@ -160,11 +184,13 @@ body{
     line-height: normal;
     padding: 30px 20px;
 }
-.navbar1 .blog1 .box7{
+
+.navbar1 .blog1 .box7 {
     width: 200px;
     background: #021D41;
 }
-.navbar1 .blog1 .box7 p{
+
+.navbar1 .blog1 .box7 p {
     color: #FFF;
     font-family: Gilroy;
     font-size: 16px;
@@ -173,29 +199,34 @@ body{
     line-height: normal;
     padding: 30px 50px;
 }
-.navbar1 .blog2{
+
+.navbar1 .blog2 {
     display: flex;
 }
-.navbar1 .blog2 .box1{
+
+.navbar1 .blog2 .box1 {
     background: #053069;
     width: 125px;
 
 }
-.navbar1 .blog2 .box1 p{
+
+.navbar1 .blog2 .box1 p {
     color: #FFF;
-font-family: Gilroy;
-font-size: 24px;
-font-style: normal;
-font-weight: 600;
-line-height: normal;
-padding: 44px 36px 44px 27px;
+    font-family: Gilroy;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    padding: 44px 36px 44px 27px;
 }
-.navbar1 .blog2 .box2{
+
+.navbar1 .blog2 .box2 {
     background: #ffffff;
     width: 180px;
     border-right: 1px solid #053069;
 }
-.navbar1 .blog2 .box2 p{
+
+.navbar1 .blog2 .box2 p {
     color: #021D41;
     font-family: Gilroy;
     font-size: 24px;
@@ -204,12 +235,14 @@ padding: 44px 36px 44px 27px;
     line-height: normal;
     padding: 50px 30px;
 }
-.navbar1 .blog2 .box3{
+
+.navbar1 .blog2 .box3 {
     background: #ffffff;
     width: 199px;
     border-right: 1px solid #053069;
 }
-.navbar1 .blog2 .box3 p{
+
+.navbar1 .blog2 .box3 p {
     color: #021D41;
     font-family: Gilroy;
     font-size: 24px;
@@ -218,12 +251,14 @@ padding: 44px 36px 44px 27px;
     line-height: normal;
     padding: 50px 30px;
 }
-.navbar1 .blog2 .box4{
+
+.navbar1 .blog2 .box4 {
     background: #ffffff;
     width: 200px;
     border-right: 1px solid #053069;
 }
-.navbar1 .blog2 .box4 p{
+
+.navbar1 .blog2 .box4 p {
     color: #021D41;
     font-family: Gilroy;
     font-size: 24px;
@@ -232,12 +267,14 @@ padding: 44px 36px 44px 27px;
     line-height: normal;
     padding: 50px 30px;
 }
-.navbar1 .blog2 .box5{
+
+.navbar1 .blog2 .box5 {
     background: #ffffff;
     width: 200px;
     border-right: 1px solid #053069;
 }
-.navbar1 .blog2 .box5 p{
+
+.navbar1 .blog2 .box5 p {
     color: #021D41;
     font-family: Gilroy;
     font-size: 24px;
@@ -246,12 +283,14 @@ padding: 44px 36px 44px 27px;
     line-height: normal;
     padding: 50px 30px;
 }
-.navbar1 .blog2 .box6{
+
+.navbar1 .blog2 .box6 {
     background: #ffffff;
     width: 200px;
     border-right: 1px solid #053069;
 }
-.navbar1 .blog2 .box6 p{
+
+.navbar1 .blog2 .box6 p {
     color: #021D41;
     font-family: Gilroy;
     font-size: 24px;
@@ -260,12 +299,14 @@ padding: 44px 36px 44px 27px;
     line-height: normal;
     padding: 50px 30px;
 }
-.navbar1 .blog2 .box7{
+
+.navbar1 .blog2 .box7 {
     background: #ffffff;
     width: 200px;
     border-right: 1px solid #053069;
 }
-.navbar1 .blog2 .box7 p{
+
+.navbar1 .blog2 .box7 p {
     color: #021D41;
     font-family: Gilroy;
     font-size: 24px;
@@ -274,113 +315,127 @@ padding: 44px 36px 44px 27px;
     line-height: normal;
     padding: 50px 30px;
 }
-.navbar1 .blog3{
+
+.navbar1 .blog3 {
     display: flex;
 }
-.navbar1 .blog3 .box1{
+
+.navbar1 .blog3 .box1 {
     width: 125px;
     background: #3975c4e0;
     border-right: 1px solid #053069;
 }
-.navbar1 .blog3 .box1 p{
+
+.navbar1 .blog3 .box1 p {
     padding: 18px 20px 25px 12px;
     color: #FFF;
-font-family: Gilroy;
-font-size: 18px;
-font-style: normal;
-font-weight: 400;
-line-height: normal;
+    font-family: Gilroy;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
 }
-.navbar1 .blog3 .box2{
+
+.navbar1 .blog3 .box2 {
     width: 180px;
     background: #3975c4e0;
     border-right: 1px solid #053069;
 }
-.navbar1 .blog3 .box2 p{
+
+.navbar1 .blog3 .box2 p {
     padding: 18px 20px 25px 45px;
     color: #FFF;
-font-family: Gilroy;
-font-size: 18px;
-font-style: normal;
-font-weight: 400;
-line-height: normal;
+    font-family: Gilroy;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
 }
-.navbar1 .blog3 .box3{
+
+.navbar1 .blog3 .box3 {
     width: 199px;
     background: #3975c4e0;
     border-right: 1px solid #053069;
 }
-.navbar1 .blog3 .box3 p{
+
+.navbar1 .blog3 .box3 p {
     padding: 21px 20px 25px 45px;
     color: #FFF;
-font-family: Gilroy;
-font-size: 18px;
-font-style: normal;
-font-weight: 400;
-line-height: normal;
-}
-.navbar1 .blog3 .box4{
-    width: 200px;
-    background: #3975c4e0;
-    border-right: 1px solid #053069;
-}
-.navbar1 .blog3 .box4 p{
-    padding: 18px 20px 25px 45px;
-    color: #FFF;
-font-family: Gilroy;
-font-size: 18px;
-font-style: normal;
-font-weight: 400;
-line-height: normal;
-}
-.navbar1 .blog3 .box5{
-    width: 200px;
-    background: #3975c4e0;
-    border-right: 1px solid #053069;
-}
-.navbar1 .blog3 .box5 p{
-    padding: 18px 20px 25px 45px;
-    color: #FFF;
-font-family: Gilroy;
-font-size: 18px;
-font-style: normal;
-font-weight: 400;
-line-height: normal;
-}
-.navbar1 .blog3 .box6{
-    width: 200px;
-    background: #3975c4e0;
-    border-right: 1px solid #053069;
-}
-.navbar1 .blog3 .box6 p{
-    padding: 18px 20px 25px 45px;
-    color: #FFF;
-font-family: Gilroy;
-font-size: 18px;
-font-style: normal;
-font-weight: 400;
-line-height: normal;
-}
-.navbar1 .blog3 .box7{
-    width: 200px;
-    background: #3975c4e0;
-    border-right: 1px solid #053069;
-}
-.navbar1 .blog3 .box7 p{
-    padding: 18px 20px 25px 45px;
-    color: #FFF;
-font-family: Gilroy;
-font-size: 18px;
-font-style: normal;
-font-weight: 400;
-line-height: normal;
+    font-family: Gilroy;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
 }
 
- 
+.navbar1 .blog3 .box4 {
+    width: 200px;
+    background: #3975c4e0;
+    border-right: 1px solid #053069;
+}
+
+.navbar1 .blog3 .box4 p {
+    padding: 18px 20px 25px 45px;
+    color: #FFF;
+    font-family: Gilroy;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.navbar1 .blog3 .box5 {
+    width: 200px;
+    background: #3975c4e0;
+    border-right: 1px solid #053069;
+}
+
+.navbar1 .blog3 .box5 p {
+    padding: 18px 20px 25px 45px;
+    color: #FFF;
+    font-family: Gilroy;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.navbar1 .blog3 .box6 {
+    width: 200px;
+    background: #3975c4e0;
+    border-right: 1px solid #053069;
+}
+
+.navbar1 .blog3 .box6 p {
+    padding: 18px 20px 25px 45px;
+    color: #FFF;
+    font-family: Gilroy;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.navbar1 .blog3 .box7 {
+    width: 200px;
+    background: #3975c4e0;
+    border-right: 1px solid #053069;
+}
+
+.navbar1 .blog3 .box7 p {
+    padding: 18px 20px 25px 45px;
+    color: #FFF;
+    font-family: Gilroy;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
 
 /* ---------FOOTER---------- */
 
-footer{
+footer {
     background: linear-gradient(221deg, #0B3E8C 0%, #001022 100%);
     margin-top: 20px;
     position: absolute;
@@ -391,266 +446,302 @@ footer{
 }
 
 
-footer .blog1{
+footer .blog1 {
     position: absolute;
 }
-footer .blog1 .box1 img{
+
+footer .blog1 .box1 img {
     width: 162px;
-height: 162px;
+    height: 162px;
     margin: 35px 0 0 134px;
 }
-footer .blog1 .box2 p{
+
+footer .blog1 .box2 p {
     color: #FFF;
-font-family: Poppins;
-font-size: 16px;
-font-style: normal;
-font-weight: 400;
-line-height: 28px;
-margin: 141px 0 0 140px;
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px;
+    margin: 141px 0 0 140px;
 }
+
 footer .blog1 .box3 {
     display: flex;
     margin: 35px 0 0 100px;
 }
-footer .blog1 .box3 img{
+
+footer .blog1 .box3 img {
     margin-left: 35px;
 }
+
 footer .blog2 {
     position: absolute;
     left: 400px;
     top: 60px;
 }
-footer .blog2 .box1{
+
+footer .blog2 .box1 {
     display: flex;
 }
 
-footer .blog2 .box1 .lin1{
+footer .blog2 .box1 .lin1 {
     width: 210px;
 }
-footer .blog2 .box1 .lin1 h2{
+
+footer .blog2 .box1 .lin1 h2 {
     color: #FFF;
-font-family: Merriweather;
-font-size: 22px;
-font-style: normal;
-font-weight: 400;
+    font-family: Merriweather;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 400;
 }
-footer .blog2 .box1 .lin1 a:nth-child(2){
+
+footer .blog2 .box1 .lin1 a:nth-child(2) {
     color: #FFF;
-font-family: Gilroy;
-font-size: 16px;
-font-style: normal;
-font-weight: 500;
-line-height: normal;
-display: block;
-text-align: start;
-margin-top: 40px;
+    font-family: Gilroy;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    display: block;
+    text-align: start;
+    margin-top: 40px;
 }
-footer .blog2 .box1 .lin1 a:nth-child(3){
+
+footer .blog2 .box1 .lin1 a:nth-child(3) {
     color: #FFF;
-font-family: Gilroy;
-font-size: 16px;
-font-style: normal;
-font-weight: 500;
-line-height: normal;
-display: block;
-text-align: start;
-margin-top: 20px;
+    font-family: Gilroy;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    display: block;
+    text-align: start;
+    margin-top: 20px;
 }
-footer .blog2 .box1 .lin1 a:hover{
+
+footer .blog2 .box1 .lin1 a:hover {
     color: #3772FF;
     transition: all 0.5s;
 }
-footer .blog2 .box1 .lin2{
+
+footer .blog2 .box1 .lin2 {
     width: 190px;
     margin-left: 80px;
 }
-footer .blog2 .box1 .lin2 h2{
+
+footer .blog2 .box1 .lin2 h2 {
     color: #FFF;
-font-family: Merriweather;
-font-size: 22px;
-font-style: normal;
-font-weight: 400;
+    font-family: Merriweather;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 400;
 }
-footer .blog2 .box1 .lin2 a:nth-child(2){
+
+footer .blog2 .box1 .lin2 a:nth-child(2) {
     color: #FFF;
-font-family: Gilroy;
-font-size: 16px;
-font-style: normal;
-font-weight: 500;
-line-height: normal;
-margin-top: 40px;
-display: block;
-text-align: start;
+    font-family: Gilroy;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin-top: 40px;
+    display: block;
+    text-align: start;
 }
-footer .blog2 .box1 .lin2 a:nth-child(3){
+
+footer .blog2 .box1 .lin2 a:nth-child(3) {
     color: #FFF;
-font-family: Gilroy;
-font-size: 16px;
-font-style: normal;
-font-weight: 500;
-line-height: normal;
-margin-top: 20px;
-display: block;
-text-align: start;
+    font-family: Gilroy;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin-top: 20px;
+    display: block;
+    text-align: start;
 }
-footer .blog2 .box1 .lin2 a:hover{
+
+footer .blog2 .box1 .lin2 a:hover {
     color: #3772FF;
     transition: all 0.5s;
 }
-footer .blog2 .box1 .lin3{
+
+footer .blog2 .box1 .lin3 {
     width: 270px;
     margin-left: 60px;
 }
-footer .blog2 .box1 .lin3 h2{
+
+footer .blog2 .box1 .lin3 h2 {
     color: #FFF;
-font-family: Merriweather;
-font-size: 22px;
-font-style: normal;
-font-weight: 400;
+    font-family: Merriweather;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 400;
 }
-footer .blog2 .box1 .lin3 a:nth-child(2){
+
+footer .blog2 .box1 .lin3 a:nth-child(2) {
     color: #FFF;
 
-font-family: Gilroy;
-font-size: 16px;
-font-style: normal;
-font-weight: 500;
-line-height: normal;
-margin-top: 40px;
-display: block;
-text-align: start;
+    font-family: Gilroy;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin-top: 40px;
+    display: block;
+    text-align: start;
 }
-footer .blog2 .box1 .lin3 a:nth-child(3){
+
+footer .blog2 .box1 .lin3 a:nth-child(3) {
     color: #FFF;
-font-family: Gilroy;
-font-size: 16px;
-font-style: normal;
-font-weight: 500;
-line-height: normal;
-margin-top: 20px;
-display: block;
-text-align: start;
+    font-family: Gilroy;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin-top: 20px;
+    display: block;
+    text-align: start;
 }
-footer .blog2 .box1 .lin3 a:nth-child(4){
+
+footer .blog2 .box1 .lin3 a:nth-child(4) {
     color: #FFF;
 
-font-family: Gilroy;
-font-size: 16px;
-font-style: normal;
-font-weight: 500;
-line-height: normal;
-margin-top: 20px;
-display: block;
-text-align: start;
+    font-family: Gilroy;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin-top: 20px;
+    display: block;
+    text-align: start;
 }
-footer .blog2 .box1 .lin3 a:nth-child(5){
+
+footer .blog2 .box1 .lin3 a:nth-child(5) {
     color: #FFF;
-font-family: Gilroy;
-font-size: 16px;
-font-style: normal;
-font-weight: 500;
-line-height: normal;
-margin-top: 20px;
-display: block;
-text-align: start;
+    font-family: Gilroy;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin-top: 20px;
+    display: block;
+    text-align: start;
 }
-footer .blog2 .box1 .lin3 a:hover{
+
+footer .blog2 .box1 .lin3 a:hover {
     color: #3772FF;
     transition: all 0.5s;
 }
-footer .blog2 .box1 .lin4{
+
+footer .blog2 .box1 .lin4 {
     width: 200px;
     margin-left: 90px;
 }
-footer .blog2 .box1 .lin4 h2{
+
+footer .blog2 .box1 .lin4 h2 {
     color: #FFF;
-font-family: Merriweather;
-font-size: 22px;
-font-style: normal;
-font-weight: 400;
+    font-family: Merriweather;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 400;
 }
-footer .blog2 .box1 .lin4 a:nth-child(2){
+
+footer .blog2 .box1 .lin4 a:nth-child(2) {
     color: #FFF;
-font-family: Gilroy;
-font-size: 16px;
-font-style: normal;
-font-weight: 500;
-line-height: normal;
-margin-top: 40px;
-display: block;
-text-align: start;
+    font-family: Gilroy;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin-top: 40px;
+    display: block;
+    text-align: start;
 }
-footer .blog2 .box1 .lin4 a:hover{
+
+footer .blog2 .box1 .lin4 a:hover {
     color: #3772FF;
     transition: all 0.5s;
 }
-footer .blog2 .box2{
-   text-align: center;
-   margin-top: 140px;
+
+footer .blog2 .box2 {
+    text-align: center;
+    margin-top: 140px;
 }
-footer .blog2 .box2 p{
+
+footer .blog2 .box2 p {
     color: #FFF;
-font-family: Gilroy;
-font-size: 14px;
-font-style: normal;
-font-weight: 400;
-line-height: normal;
+    font-family: Gilroy;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
 }
-footer .blog3{
+
+footer .blog3 {
     margin: 336px 0 0 90px;
     position: absolute;
     left: 1400px;
     top: 15px;
 }
+
 footer .blog3 .box1 {
     display: flex;
     align-items: center;
 }
-footer .blog3 .box1 img{
+
+footer .blog3 .box1 img {
     width: 44px;
     height: 44px;
     padding: 8px;
     background-color: #ffffff;
-    border-radius: 10px;   
+    border-radius: 10px;
 }
-footer .blog3 .box1 a{
+
+footer .blog3 .box1 a {
     color: #F5FAFE;
-text-align: right;
-font-family: Gilroy;
-font-size: 20px;
-font-style: normal;
-font-weight: 500;
-line-height: normal;
-margin-left: 20px;
+    text-align: right;
+    font-family: Gilroy;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin-left: 20px;
 }
-footer .blog3 .box1 a:hover{
+
+footer .blog3 .box1 a:hover {
     color: #3772FF;
     transition: all 0.5s;
 }
+
 footer .blog3 .box2 {
     display: flex;
     align-items: center;
     margin-top: 22px;
 }
-footer .blog3 .box2 img{
+
+footer .blog3 .box2 img {
     width: 44px;
     height: 44px;
     padding: 8px;
     background-color: #ffffff;
-    border-radius: 10px;   
+    border-radius: 10px;
 }
-footer .blog3 .box2 a{
-    color: #F5FAFE;
 
-text-align: right;
-font-family: Gilroy;
-font-size: 20px;
-font-style: normal;
-font-weight: 500;
-line-height: normal;
-margin-left: 20px;
+footer .blog3 .box2 a {
+    color: #F5FAFE;
+    text-align: right;
+    font-family: Gilroy;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin-left: 20px;
 }
-footer .blog3 .box2 a:hover{
+
+footer .blog3 .box2 a:hover {
     color: #3772FF;
     transition: all 0.5s;
 }
