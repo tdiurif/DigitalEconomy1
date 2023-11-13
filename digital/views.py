@@ -21,6 +21,10 @@ def HomeView(request):
 
 
 def FacultyAbout(request):
+    lis = [1, 2, 3, 4, 5, 6]
+    context = {
+        'lis': lis
+    }
     return render(request, 'twoindex.html')
 
 
@@ -30,6 +34,14 @@ def TechView(request):
         'teach': teach
     }
     return render(request, 'threeindex.html')
+
+
+def DepartamentAllView(request,pk):
+    departament = DepartamentModels.objects.get(id=pk)
+    context = {
+        'departament': departament,
+    }
+    return render(request, 'yangiikkindex.html', context)
 
 
 def DepartamentView(request):
