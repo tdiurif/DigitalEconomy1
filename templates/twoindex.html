@@ -1,61 +1,51 @@
-{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="{% static 'css/twostyle.css' %}">
+    <link rel="stylesheet" href="css/twostyle.css">
     <title>Ikkinchi oyna</title>
 </head>
 <body>
     <div class="menu">
         <ul>
             <li>
-                <a href="{% url 'home' %}">
-                    <img src="{%  static 'img/logo.png' %}" alt="">
+                <a href="index.html">
+                    <img src="img/logo.png" alt="">
                     <p>Raqamli iqtisodiyot</p>
                 </a>
             </li>
-            <li><a href="{% url 'about' %}">Fakultetlar haqida</a></li>
-            <li><a href="{% url 'tech' %}">Ta’lim</a></li>
-            <li><a href="{% url 'departament' %}">Kafedralar</a></li>
-            <li><a href="{% url 'tadqiqot' %}">Tadqiqotlar</a></li>
+            <li><a href="twoindex.html">Fakultetlar haqida</a></li>
+            <li><a href="threeindex.html">Ta’lim</a></li>
+            <li><a href="fiveindex.html">Kafedralar</a></li>
+            <li><a href="sixindex.html">Tadqiqotlar</a></li>
         </ul>
     </div>
-    <h2 class="num">
-        Raqamli Iqtisodiyot haqida
-    </h2>
+    <h2 class="num">Raqamli Iqtisodiyot haqida</h2>
     <div class="bg1"></div>
     <header>
         <div class="blog1">
             <div class="box1">
-                <img src="{% static 'img/birinchi oyna img 2.png' %}" alt="">
+                <img src="img/birinchi oyna img 2.png" alt="">
                 <h2>Raqamli iqtisodiyot</h2>
                 <p>
-                    Bugungi kunda raqamli texnologiyalar zamonaviy jamiyat hayotining barcha sohalariga, jumladan, iqtisodiyot
-                    sohasiga ham faol kirib bormoqda. Iqtisodiyotni raqamlashtirish global iqtisodiyotda iqtisodiy o‘sishning muhim omiliga
-                    aylanmoqda. Shuning uchun O‘zbekistonda iqtisodiyot tarmoqlari, ijtimoiy soha va davlat boshqaruvi tizimining jadal raqamli
-                    rivojlanishini taʼminlash muhim ahamiyat kasb etmoqda. Ushbu maqsadlarga erishishni taʼminlash tahliliy va ilmiy-uslubiy tadqiqotlar va innovatsion
-                    o‘zgarishlarni talab qiladi. Bunday
-                    o‘zgarishlar esa raqamli iqtisodiyot sharoitida nazariy va tahliliy bilimlar va ko‘nikmalarga ega yuqori malakali mutaxassislarni
-                    tayyorlashni talab qiladi.
+                    Bugungi kunda raqamli texnologiyalar zamonaviy jamiyat hayotining barcha sohalariga, jumladan, iqtisodiyot sohasiga ham faol kirib bormoqda. Iqtisodiyotni raqamlashtirish global iqtisodiyotda iqtisodiy o‘sishning muhim omiliga aylanmoqda. Shuning uchun O‘zbekistonda iqtisodiyot tarmoqlari, ijtimoiy soha va davlat boshqaruvi tizimining jadal raqamli rivojlanishini taʼminlash muhim ahamiyat kasb etmoqda. Ushbu maqsadlarga erishishni taʼminlash tahliliy va ilmiy-uslubiy tadqiqotlar va innovatsion o‘zgarishlarni talab qiladi. Bunday o‘zgarishlar esa raqamli iqtisodiyot sharoitida nazariy va tahliliy bilimlar va ko‘nikmalarga ega yuqori malakali mutaxassislarni tayyorlashni talab qiladi.
                 </p>
-
             </div>
             <div class="box1">
-                <img src="{% static 'img/Group 20.png' %}" alt="">
+                <img src="img/birinchi oyna img 2.png" alt="">
                 <h2>Raqamli iqtisodiyotni rivojlanishi</h2>
                 <p>
-                    Raqamli iqtisodiyot fakulteti 1963-yilda “Iqtisodiy axborotlarni avtomatlashtirilgan usulda qayta ishlashni tashkil etish” mutaxassisligi bo‘yicha talabalar qabul qila boshlagan. 1968-yilda “Iqtisodiy kibernetika” mutaxassisligining ochilishi bilan Iqtisodiy kibernetika fakulteti tashkil etildi. Raqamli texnologiyalarning barcha sohalarga va odamlar hayotiga jadal kirib borishi tufayli 2020-yildan boshlab fakultet Raqamli iqtisodiyot nomi bilan atala boshlandi.
+                    Toshkent davlat iqtisodiyot universitetining Raqamli iqtisodiyot fakulteti (RIF) dunyodagi eng tez rivojlanayotgan sohalardan biri bo‘lgani uchun yuqori sifatli tajriba va malakali inson salohiyatiga ega bo‘lgan kadrlarni tayyorlaydi. Bunga raqamli iqtisodiyot, innovatsion ta’lim, iqtisodiy xavfsizlik, iqtisodiyotda axborot tizimlari va texnologiyalari sohalarini qamrab oladigan o‘quv dasturlarimiz orqali erishiladi.
                 </p>
             </div>
         </div>
         <div class="blog2">
             <div class="box2">
-                <img src="{% static 'img/Group 19.png' %}" alt="">
+                <img src="img/birinchi oyna img 2.png" alt="">
                 <h2>Oʼzbekistonda raqamli iqtisodiyot qay darajada rivojlangan?</h2>
                 <p>
-                    Toshkent davlat iqtisodiyot universitetining Raqamli iqtisodiyot fakulteti (RIF) dunyodagi eng tez rivojlanayotgan sohalardan biri bo‘lgani uchun yuqori sifatli tajriba va malakali inson salohiyatiga ega bo‘lgan kadrlarni tayyorlaydi. Bunga raqamli iqtisodiyot, innovatsion ta’lim, iqtisodiy xavfsizlik, iqtisodiyotda axborot tizimlari va texnologiyalari sohalarini qamrab oladigan o‘quv dasturlarimiz orqali erishiladi.
+                    Ilmsiz, maʼrifatsiz jamiyat va mamlakat taraqqiyotini tasavvur qilish mushkul. Yusuf Xos Hojib oʻzining “Qutadgʻu bilig” asarida “Bilimsiz kishi mevasiz daraxtdir, mevasiz daraxtni och kishi nima qilsin?!” - deb ilm-maʼrifatning oʻrni naqadar dolzarb va muhimligini koʻrsatib oʻtgan.
                 </p>
             </div>
         </div>
@@ -63,7 +53,7 @@
     <div class="bg2"></div>
     <div class="navbar1">
         <div class="blog1">
-            <img src="{% static 'img/oyna2.png' %}" alt="">
+            <img src="img/oyna2.png" alt="">
         </div>
         <div class="blog2">
             <h2>Raqamli Iqtisodiyot belgilari</h2>
@@ -96,7 +86,6 @@
             <img src="img/oyna2.1.png" alt="">
         </div>
         <div class="blog2">
-            {% for i in lis %}
             <div class="box1">
                 <img src="img/profesor1.png" alt="">
                 <h2>A’zam Qutbiddin A’zamzoda</h2>
@@ -104,27 +93,72 @@
                     Raqamli iqtisodiyot - bu xo'jalik faoliyatini yuritish bo'lib, bunda ishlab chiqarish va xizmat ko'rsatishdagi asosiy omil raqamlar ko'rinishidagi ma'lumotlar bo'lib, katta hajmdagi axborotlarni qayta ishlash va shu qayta ishlash natijasini analiz qilish yordamida har xil turdagi ishlab chiqarish, xizmat ko'rsatish, texnologiyalar, qurilmalar, saqlash, mahsulotlarni yetkazib berishda oldingi tizimdan samaraliroq yechimlar tadbiq qilishdir.
                 </p>
             </div>
-            {% endfor %}
-<!--            <div class="box1">-->
-<!--                <img src="img/oyna2.2.png" alt="">-->
-<!--                <h2>Azizov Bekzod</h2>-->
-<!--                <p>-->
-<!--                    Raqamli iqtisodiyot - bu xo'jalik faoliyatini yuritish bo'lib, bunda ishlab chiqarish va xizmat ko'rsatishdagi asosiy omil raqamlar ko'rinishidagi ma'lumotlar bo'lib, katta hajmdagi axborotlarni qayta ishlash va shu qayta ishlash natijasini analiz qilish yordamida har xil turdagi ishlab chiqarish, xizmat ko'rsatish, texnologiyalar, qurilmalar, saqlash, mahsulotlarni yetkazib berishda oldingi tizimdan samaraliroq yechimlar tadbiq qilishdir.-->
-<!--                </p>-->
-<!--            </div>-->
-<!--            <div class="box1">-->
-<!--                <img src="img/oyna2.2.png" alt="">-->
-<!--                <h2>Azizov Bekzod</h2>-->
-<!--                <p>-->
-<!--                    Raqamli iqtisodiyot - bu xo'jalik faoliyatini yuritish bo'lib, bunda ishlab chiqarish va xizmat ko'rsatishdagi asosiy omil raqamlar ko'rinishidagi ma'lumotlar bo'lib, katta hajmdagi axborotlarni qayta ishlash va shu qayta ishlash natijasini analiz qilish yordamida har xil turdagi ishlab chiqarish, xizmat ko'rsatish, texnologiyalar, qurilmalar, saqlash, mahsulotlarni yetkazib berishda oldingi tizimdan samaraliroq yechimlar tadbiq qilishdir.-->
-<!--                </p>-->
-<!--            </div>-->
+            <div class="box1">
+                <img src="img/oyna2.2.png" alt="">
+                <h2>Azizov Bekzod</h2>
+                <p>
+                    Raqamli iqtisodiyot - bu xo'jalik faoliyatini yuritish bo'lib, bunda ishlab chiqarish va xizmat ko'rsatishdagi asosiy omil raqamlar ko'rinishidagi ma'lumotlar bo'lib, katta hajmdagi axborotlarni qayta ishlash va shu qayta ishlash natijasini analiz qilish yordamida har xil turdagi ishlab chiqarish, xizmat ko'rsatish, texnologiyalar, qurilmalar, saqlash, mahsulotlarni yetkazib berishda oldingi tizimdan samaraliroq yechimlar tadbiq qilishdir.
+                </p>
+            </div>
+            <div class="box1">
+                <img src="img/oyna2.2.png" alt="">
+                <h2>Azizov Bekzod</h2>
+                <p>
+                    Raqamli iqtisodiyot - bu xo'jalik faoliyatini yuritish bo'lib, bunda ishlab chiqarish va xizmat ko'rsatishdagi asosiy omil raqamlar ko'rinishidagi ma'lumotlar bo'lib, katta hajmdagi axborotlarni qayta ishlash va shu qayta ishlash natijasini analiz qilish yordamida har xil turdagi ishlab chiqarish, xizmat ko'rsatish, texnologiyalar, qurilmalar, saqlash, mahsulotlarni yetkazib berishda oldingi tizimdan samaraliroq yechimlar tadbiq qilishdir.
+                </p>
+            </div>
+        </div>
+        <div class="blog2">
+            <div class="box1">
+                <img src="img/profesor1.png" alt="">
+                <h2>A’zam Qutbiddin A’zamzoda</h2>
+                <p>
+                    Raqamli iqtisodiyot - bu xo'jalik faoliyatini yuritish bo'lib, bunda ishlab chiqarish va xizmat ko'rsatishdagi asosiy omil raqamlar ko'rinishidagi ma'lumotlar bo'lib, katta hajmdagi axborotlarni qayta ishlash va shu qayta ishlash natijasini analiz qilish yordamida har xil turdagi ishlab chiqarish, xizmat ko'rsatish, texnologiyalar, qurilmalar, saqlash, mahsulotlarni yetkazib berishda oldingi tizimdan samaraliroq yechimlar tadbiq qilishdir.
+                </p>
+            </div>
+            <div class="box1">
+                <img src="img/oyna2.2.png" alt="">
+                <h2>Azizov Bekzod</h2>
+                <p>
+                    Raqamli iqtisodiyot - bu xo'jalik faoliyatini yuritish bo'lib, bunda ishlab chiqarish va xizmat ko'rsatishdagi asosiy omil raqamlar ko'rinishidagi ma'lumotlar bo'lib, katta hajmdagi axborotlarni qayta ishlash va shu qayta ishlash natijasini analiz qilish yordamida har xil turdagi ishlab chiqarish, xizmat ko'rsatish, texnologiyalar, qurilmalar, saqlash, mahsulotlarni yetkazib berishda oldingi tizimdan samaraliroq yechimlar tadbiq qilishdir.
+                </p>
+            </div>
+            <div class="box1">
+                <img src="img/oyna2.2.png" alt="">
+                <h2>Azizov Bekzod</h2>
+                <p>
+                    Raqamli iqtisodiyot - bu xo'jalik faoliyatini yuritish bo'lib, bunda ishlab chiqarish va xizmat ko'rsatishdagi asosiy omil raqamlar ko'rinishidagi ma'lumotlar bo'lib, katta hajmdagi axborotlarni qayta ishlash va shu qayta ishlash natijasini analiz qilish yordamida har xil turdagi ishlab chiqarish, xizmat ko'rsatish, texnologiyalar, qurilmalar, saqlash, mahsulotlarni yetkazib berishda oldingi tizimdan samaraliroq yechimlar tadbiq qilishdir.
+                </p>
+            </div>
+        </div>
+        <div class="blog2">
+            <div class="box1">
+                <img src="img/profesor1.png" alt="">
+                <h2>A’zam Qutbiddin A’zamzoda</h2>
+                <p>
+                    Raqamli iqtisodiyot - bu xo'jalik faoliyatini yuritish bo'lib, bunda ishlab chiqarish va xizmat ko'rsatishdagi asosiy omil raqamlar ko'rinishidagi ma'lumotlar bo'lib, katta hajmdagi axborotlarni qayta ishlash va shu qayta ishlash natijasini analiz qilish yordamida har xil turdagi ishlab chiqarish, xizmat ko'rsatish, texnologiyalar, qurilmalar, saqlash, mahsulotlarni yetkazib berishda oldingi tizimdan samaraliroq yechimlar tadbiq qilishdir.
+                </p>
+            </div>
+            <div class="box1">
+                <img src="img/oyna2.2.png" alt="">
+                <h2>Azizov Bekzod</h2>
+                <p>
+                    Raqamli iqtisodiyot - bu xo'jalik faoliyatini yuritish bo'lib, bunda ishlab chiqarish va xizmat ko'rsatishdagi asosiy omil raqamlar ko'rinishidagi ma'lumotlar bo'lib, katta hajmdagi axborotlarni qayta ishlash va shu qayta ishlash natijasini analiz qilish yordamida har xil turdagi ishlab chiqarish, xizmat ko'rsatish, texnologiyalar, qurilmalar, saqlash, mahsulotlarni yetkazib berishda oldingi tizimdan samaraliroq yechimlar tadbiq qilishdir.
+                </p>
+            </div>
+            <div class="box1">
+                <img src="img/oyna2.2.png" alt="">
+                <h2>Azizov Bekzod</h2>
+                <p>
+                    Raqamli iqtisodiyot - bu xo'jalik faoliyatini yuritish bo'lib, bunda ishlab chiqarish va xizmat ko'rsatishdagi asosiy omil raqamlar ko'rinishidagi ma'lumotlar bo'lib, katta hajmdagi axborotlarni qayta ishlash va shu qayta ishlash natijasini analiz qilish yordamida har xil turdagi ishlab chiqarish, xizmat ko'rsatish, texnologiyalar, qurilmalar, saqlash, mahsulotlarni yetkazib berishda oldingi tizimdan samaraliroq yechimlar tadbiq qilishdir.
+                </p>
+            </div>
         </div>
     </div>
     <div class="bg4"></div>
     <div class="navbar3">
         <div class="blog1">
-            <img src="{% static 'img/oyna2.3.png' %}" alt="">
+            <img src="img/oyna2.3.png" alt="">
         </div>
         <div class="blog2">
             <div class="box1">
@@ -154,15 +188,15 @@
 
     <div class="blog1">
         <div class="box1">
-            <img src="{% static 'img/logo.png' %}" alt="">
+            <img src="img/logo.png" alt="">
         </div>
         <div class="box2">
             <p>Raqamli iqtisodiyot fakulteti</p>
         </div>
         <div class="box3">
-            <a href="#"><img src="{% static 'img/kontr1.png' %}" alt=""></a>
-            <a href="#"><img src="{% static 'img/kontr2.png' %}" alt=""></a>
-            <a href="#"><img src="{% static 'img/kontr3.png' %}" alt=""></a>
+            <a href="#"><img src="img/kontr1.png" alt=""></a>
+            <a href="#"><img src="img/kontr2.png" alt=""></a>
+           <a href="#"> <img src="img/kontr3.png" alt=""></a>
         </div>
     </div>
     <div class="blog2">
@@ -196,11 +230,11 @@
     </div>
     <div class="blog3">
         <div class="box1">
-            <img src="{% static 'img/tel2.png' %}" alt="">
-            <a href="#">+(998) </a>
+            <img src="img/tel2.png" alt="">
+            <a href="#">+(000) 000 000</a>
         </div>
         <div class="box2">
-            <img src="{% static 'img/email.png' %}" alt="">
+            <img src="img/email.png" alt="">
             <a href="#">@mail.com</a>
         </div>
     </div>
