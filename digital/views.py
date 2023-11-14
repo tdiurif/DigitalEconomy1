@@ -75,3 +75,6 @@ def SocialProjectView(request):
 
 def ScoreBallsView(request):
     return render(request, 'nineindex.html')
+
+def StaticaView(request):
+    return render(request,'statica.html')
