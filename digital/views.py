@@ -1,6 +1,6 @@
 from django.shortcuts import render
 
-from digital.models import ImageModels, DepartamentModels
+from digital.models import ImageModels
 from .models import NewsModel, TeachModels, ImageNextMOdels, ImageActiveMOdels, ImagePrevMOdels
 
 
@@ -36,24 +36,24 @@ def TechView(request):
     return render(request, 'threeindex.html')
 
 
-def DepartamentAllView(request,pk):
-    departament = DepartamentModels.objects.get(id=pk)
-    context = {
-        'departament': departament,
-    }
-    return render(request, 'yangiikkindex.html', context)
+# def DepartamentAllView(request,pk):
+#     departament = DepartamentModels.objects.get(id=pk)
+#     context = {
+#         'departament': departament,
+#     }
+#     return render(request, 'yangiikkindex.html', context)
 
 
 def DepartamentView(request):
-    departaments = DepartamentModels.objects.all()
-    list1 = []
-    for i in range(1, len(departaments) + 1):
-        if i % 2 == 0:
-            list1.append(i)
+    # departaments = DepartamentModels.objects.all()
+    # list1 = []
+    # for i in range(1, len(departaments) + 1):
+    #     if i % 2 == 0:
+    #         list1.append(i)
 
     return render(request, 'fiveindex.html', {
-        "departaments": departaments,
-        "list1": list1
+        # "departaments": departaments,
+        # "list1": list1
     })
 
 

@@ -9,15 +9,15 @@ class NewsModel(models.Model):
     date_ad = models.DateTimeField(auto_now_add=True, blank=True, null=True)
 
 
-class DepartamentModels(models.Model):
-    title = models.CharField(max_length=250, blank=True, null=True)
-    name = models.CharField(max_length=255, blank=True, null=True)
-    image = models.ImageField(upload_to='static/img/departament/', blank=True, null=True)
-    image_all = models.ImageField(upload_to='static/img/departament/', blank=True, null=True)
-    body = RichTextField(blank=True, null=True)
-
-    def __str__(self):
-        return f'{self.title} | {self.name}'
+# class DepartamentModels(models.Model):
+#     title = models.CharField(max_length=250, blank=True, null=True)
+#     name = models.CharField(max_length=255, blank=True, null=True)
+#     image = models.ImageField(upload_to='static/img/departament/', blank=True, null=True)
+#     image_all = models.ImageField(upload_to='static/img/departament/', blank=True, null=True)
+#     body = RichTextField(blank=True, null=True)
+#
+#     def __str__(self):
+#         return f'{self.title} | {self.name}'
 
 
 class TeachModels(models.Model):
@@ -106,7 +106,7 @@ class ProfessorModel(models.Model):
 class TeachersModel(models.Model):
     name = models.CharField(max_length=255)
     image = models.ImageField(upload_to='static/img/professor/')
-    position = models.ForeignKey(DepartamentModels, on_delete=models.PROTECT)
+    # position = models.ForeignKey(DepartamentModels, on_delete=models.PROTECT)
     body = RichTextField(blank=True, null=True)
     email = models.EmailField(blank=True, null=True)
     number = models.CharField(max_length=255, blank=True, null=True)

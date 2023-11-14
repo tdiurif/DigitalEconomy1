@@ -27,49 +27,47 @@
             Kafedralar
         </h2>
     </div>
-    {% for i in departaments %}
-        {% if i.id in list1 %}
+
     <div class="navbar1">
         <div class="blog1">
             <div class="box1">
                 <span></span>
-                <h2>{{ i.title}}</h2>
+                <h2>Statistika</h2>
             </div>
             <div class="box2">
-                <a href="{% url 'departament_all' pk %}">{{i.name}} turlari </a>
+                <a href="">Statistika turlari </a>
                 <p>
-                    {{ i.body }}
+                   Statistika kafedrasiga 1932 yilda asos solingan. 1953 yildan boshlab Statistika ta’lim yo’nalishi bo’yicha talabalar tayyorlab kelinmoqda.
                 </p>
+                <p> 1997 yildan boshlab Statistika talim yo’nalish bo’yicha bakalavriyatda va 2000 yildan boshlab Statistika mutaxassisligi bo’yicha magistraturada talabalar taxsil olib kelmoqda. </p>
 
             </div>
         </div>
         <div class="blog2">
-            <img src="{{ i.image.url }}" alt="">
+            <img src="" alt="">
         </div>
     </div>
-        {% else %}
+
     <div class="navbar2">
         <div class="blog2">
-            <img src="{{ i.image.url }}" alt="">
+            <img src="" alt="">
         </div>
         <div class="blog1">            
             <div class="box1">
                 <span></span>
-                <h2>Iqtisodiy xavfsizlik</h2>
+                <h2></h2>
             </div>
             <div class="box2">
-                <a href="#">Iqtisodiy xavfsizlik turlari </a>
+                <a href="#"> turlari </a>
                 <p>
-                    State and political figure, the first president of the Republic of Uzbekistan. Hero Of Uzbekistan (1994). Supreme Commander-in-chief of the Armed Forces of Uzbekistan and winner of the presidential elections of 2007, winner of the presidential elections of 2015. The first secretary of the Communist Party of Uzbekistan until the declaration of independence. President of Uzbekistan from 1991 to the end of his life. Under the leadership of Islam Karimov, Uzbekistan had its own constitution, was recognized in the UN and had equal relations with the CIS countries.
+
                 </p>
-                <p>
-                    State and political figure, the first president of the Republic of Uzbekistan. Hero Of Uzbekistan (1994). Supreme Commander-in-chief of the Armed Forces of Uzbekistan and winner of the presidential elections of 2007, winner of the presidential elections of 2015. The first secretary of the Communist Party of Uzbekistan until the declaration of independence. President of Uzbekistan from 1991 to the end of his life. Under the leadership of Islam Karimov, Uzbekistan had its own constitution, was recognized in the UN and had equal relations with the CIS countries.
-                </p>
+                <p></p>
+
             </div>
         </div>
     </div>
-        {% endif %}
-    {% endfor %}
+
   
     <footer>
 

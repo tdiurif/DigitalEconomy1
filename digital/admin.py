@@ -1,8 +1,8 @@
 from django.contrib import admin
-from .models import DepartamentModels, NewsModel, TeachModels, ImageModels, FacultetsModels, SlideModels, GroupModel, DaysModel, ScheduleModel, ImageActiveMOdels, ImageNextMOdels, ImagePrevMOdels, BitiruvchilarModel
+from .models import  NewsModel, TeachModels, ImageModels, FacultetsModels, SlideModels, GroupModel, DaysModel, ScheduleModel, ImageActiveMOdels, ImageNextMOdels, ImagePrevMOdels, BitiruvchilarModel
 
 
-admin.site.register(DepartamentModels)
+# admin.site.register(DepartamentModels)
 admin.site.register(NewsModel)
 admin.site.register(TeachModels)
 admin.site.register(ImageModels)
