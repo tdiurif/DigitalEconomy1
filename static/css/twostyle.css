@@ -59,32 +59,24 @@ font-style: normal;
 font-weight: 700;
 line-height: normal;
 text-align: center;
-margin-top: 200px;
+margin-top: 120px;
 }
 /* ----------heder-------- */
 
-.bg1{
-    width: 1536.854px;
-height: 1200px;
-transform: rotate(27.198deg);
-background-color: rgba(233, 245, 255, 0.50);
-margin: 200px 0 0 140px;
-position: relative;
-}
+
 header{
     display: flex;
-    position: absolute;
-    top: 300px;
+
 }
 header .blog1{
     width: 664px;
-    margin: 150px 0 0 140px;
+    margin: 10px 0 0 140px;
 
 }
 
 header .blog1 .box1 img{
     border-radius: 0 150px  0 0 ;
-    margin-top: 200px;
+    margin-top: 150px;
 }
 header .blog1 .box1 h2{
     color: #474F62;
@@ -133,26 +125,17 @@ font-weight: 400;
 line-height: normal;
 margin-top: 30px;
 }
-.bg2{
-    width: 1645.34px;
-height: 750px;
-transform: rotate(27.2deg);
-background-image: linear-gradient(306deg, #E9F5FF 0%, rgba(245, 242, 253, 0.00) 100%, rgba(245, 242, 253, 0.10) 100%);
-margin: 800px 0 0 140px;
-position: relative;
-}
+
 .navbar1{
-    position: absolute;
-    top: 2600px;
     display: flex;
 }
 .navbar1 .blog1 img{
     width: 785.441px;
-height: 763px;
-margin: 0 0 0 135px ;
+    height: 763px;
+    margin: 100px 0 0 135px ;
 }
 .navbar1 .blog2{
-    margin: 50px 0 0 150px;
+    margin: 150px 0 0 150px;
 }
 .navbar1 .blog2 h2{
     color: #474F62;
@@ -169,22 +152,15 @@ font-family: Gilroy;
 font-size: 24px;
 font-style: normal;
 font-weight: 400;
-line-height: 150.7%; 
+line-height: 150.7%;
 letter-spacing: 0.1px;
 list-style: disc;
 }
 
 /* ------------------- */
-.bg3{
-    width: 1536.854px;
-height: 1136.163px;
-transform: rotate(27.198deg);
-    background-color: rgba(233, 245, 255, 0.50);;
-    margin: 1000px 0 0 140px;
-}
+
 .navbar2{
-    position: absolute;
-    top: 3600px;
+    margin-top: 100px;
 }
 .navbar2 .lg{
     color: #474F62;
@@ -198,7 +174,6 @@ margin-left: 600px;
 .navbar2 .blog2 {
     width: 1644px;
 
-
 }
 .navbar2 .blog1  img {
     width: 1644px;
@@ -207,11 +182,7 @@ margin-left: 600px;
 }
 .navbar2 .blog2{
     display: flex;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 2rem;
     margin: 120px 0 0 120px;
-
 }
 .navbar2 .blog2 .box1{
     width: 510px;
@@ -250,18 +221,10 @@ margin-top: 25px;
     transition: all 1.5s;
     cursor: pointer;
 }
-.bg4{
-    width: 1536.854px;
-height: 700px;
-transform: rotate(5.962deg);
-    background-color: rgba(233, 245, 255, 0.50); 
-    position: relative;
-    margin-top: 200px;
-}
+
 .navbar3 {
     display: flex;
-    top: 5500px;
-    position: absolute;
+    margin: 200px 0 ;
 }
 .navbar3 .blog1{
     margin-left: 169px;
@@ -290,8 +253,8 @@ margin-bottom: 100px;
     font-size: 18px;
     font-style: normal;
     font-weight: 400;
-    line-height: normal; 
-    margin-top: 20px;  
+    line-height: normal;
+    margin-top: 20px;
 }
 
 
@@ -299,15 +262,12 @@ margin-bottom: 100px;
 
 footer{
     background: linear-gradient(221deg, #0B3E8C 0%, #001022 100%);
-    margin-top: 20px;
     position: absolute;
     width: 1900px;
     height: 500px;
     display: flex;
     padding-bottom: 90px;
 }
-
-
 footer .blog1{
     position: absolute;
 }
