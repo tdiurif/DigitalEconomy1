@@ -1,7 +1,7 @@
 from django.urls import path
 
 from .views import HomeView, FacultyAbout, TechView, DepartamentView, TadqiqotlarView, FacultyLifeView, \
-    FacultySportView, SocialProjectView, ScoreBallsView,StaticaView
+    FacultySportView, SocialProjectView, ScoreBallsView,StaticaView,AIView
 
 urlpatterns = [
     path("", HomeView, name="home"),
@@ -14,4 +14,5 @@ urlpatterns = [
     path("socialproject/", SocialProjectView, name="social_project"),
     path("kirish_ballari/", ScoreBallsView, name="score_ball"),
     path("statica_all/", StaticaView, name="statica"),
+    path("suniy_intlekt/", AIView, name="suniy_intelect"),
 ]

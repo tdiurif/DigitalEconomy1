@@ -8,92 +8,193 @@
     <link rel="stylesheet" href="{%  static 'css/fivestyle.css' %}">
 </head>
 <body>
-    <div class="menu">
-        <ul>
-            <li>
-                <a href="{% url 'home'%}">
-                    <img src="{%  static 'img/logo.png' %}" alt="">
-                    <p>Raqamli iqtisodiyot</p>
-                </a>
-            </li>
-            <li><a href="{% url 'about' %}">Fakultet haqida</a></li>
-                <li><a href="{% url 'tech' %}">Ta'lim</a></li>
-                <li><a href="{% url 'departament' %}">Kafedralar</a></li>
-                <li><a href="{% url 'tadqiqot' %}">Tadqiqotlar</a></li>
-        </ul>
-    </div>
-    <div class="num">
-        <h2>
-            Kafedralar
-        </h2>
-    </div>
+<div class="menu">
+    <ul>
+        <li>
+            <a href="{% url 'home'%}">
+                <img src="{%  static 'img/logo.png' %}" alt="">
+                <p>Raqamli iqtisodiyot</p>
+            </a>
+        </li>
+        <li><a href="{% url 'about' %}">Fakultet haqida</a></li>
+        <li><a href="{% url 'tech' %}">Ta'lim</a></li>
+        <li><a href="{% url 'departament' %}">Kafedralar</a></li>
+        <li><a href="{% url 'tadqiqot' %}">Tadqiqotlar</a></li>
+    </ul>
+</div>
+<div class="num">
+    <h2>
+        Kafedralar
+    </h2>
+</div>
 
-    <div class="navbar1">
-        <div class="blog1">
-            <div class="box1">
-                <span></span>
-                <h2>Statistika</h2>
-            </div>
-            <div class="box2">
-                <a href="{% url 'statica' %}">Statistika turlari </a>
-                <p>
-                   Statistika kafedrasiga 1932 yilda asos solingan. 1953 yildan boshlab Statistika ta’lim yo’nalishi bo’yicha talabalar tayyorlab kelinmoqda.
-                   1997 yildan boshlab Statistika talim yo’nalish bo’yicha bakalavriyatda va 2000 yildan boshlab Statistika mutaxassisligi bo’yicha magistraturada talabalar taxsil olib kelmoqda.
-                    O‘quv rejani shakllantirishda Stanford University o‘quv rejasidan andoza olingan. 2020-yilda butun jahon Times Higher Education(THE) world university rankings.da 4 o‘rinni egallaydi.
-
-                </p>
-                <p>
-                    O‘quv rejani shakllantirishda
-                    “The University of Chicago”  o‘quv rejasidan andoza olingan.
-                    2020-yilda butun jahon Times Higher Education(THE) world university rankings da 9 o‘rinni egallaydi.
-                    <b>Tadqiqot yo’nalishlari</b>: Statistika nazariyasi, amaliy statistika,
-                    xalqaro statistika, statistik prognozlash, tashqi savdo statistikasi.
-                    Statistika kafedrasiga Ayubjonov A.H. i.f.n. dotsent 2007 yildan boshlab hozirgi davrgacha rahbarlik qilib kelmoqda.
-
-                </p>
-
-            </div>
+<div class="navbar1">
+    <div class="blog1">
+        <div class="box1">
+            <span></span>
+            <h2>Statistika</h2>
         </div>
-        <div class="blog2">
-            <img src="{% static 'img/statistika.png' %}" alt="">
-        </div>
-    </div>
+        <div class="box2">
+            <a href="{% url 'statica' %}">Statistika turlari </a>
+            <p>
+                Statistika kafedrasiga 1932 yilda asos solingan. 1953 yildan boshlab Statistika ta’lim yo’nalishi
+                bo’yicha talabalar tayyorlab kelinmoqda.
+                1997 yildan boshlab Statistika talim yo’nalish bo’yicha bakalavriyatda va 2000 yildan boshlab Statistika
+                mutaxassisligi bo’yicha magistraturada talabalar taxsil olib kelmoqda.
+                O‘quv rejani shakllantirishda Stanford University o‘quv rejasidan andoza olingan. 2020-yilda butun jahon
+                Times Higher Education(THE) world university rankings.da 4 o‘rinni egallaydi.
 
-    <div class="navbar2">
-        <div class="blog2">
-            <img src="{% static 'img/suniy_intelekt.png' %}" alt="">
-        </div>
-        <div class="blog1">            
-            <div class="box1">
-                <span></span>
-                <h2>Sun’iy intellekt</h2>
-            </div>
-            <div class="box2">
-                <a href="#">Sun’iy intellekt turlari </a>
-                <p>
-                    Sun’iy intellekt kafedrasi Toshkent davlat iqtisodiyot universiteti
-                    rektorining 359-sonli buyrug’iga asosan, 2022 yil 1
-                    dekabrda tashkil etildi.
-                </p>
-                <p>
-                    Toshkent davlat iqtisodiyot universitetida Sun’iy intellekt kafedrasi universitetning o‘quv, o‘quv-uslubiy va moddiy texnik bazasi ushbu ta’lim
-                    sohasida yuqori malakali kadrlar tayyorlashga imkon beradi. Ushbu olib borilayotgan barcha tizimli islohotlar O‘zbekistonning
-                    barcha iqtisodiyot sohalarida raqamli trasformatsiya jarayonini jadallashtiradi va sun’iy intellekt texnologiyalari keng joriy etish imkoniyatini taqdim etadi.
-                </p>
+            </p>
+            <p>
+                O‘quv rejani shakllantirishda
+                “The University of Chicago” o‘quv rejasidan andoza olingan.
+                2020-yilda butun jahon Times Higher Education(THE) world university rankings da 9 o‘rinni egallaydi.
+                <b>Tadqiqot yo’nalishlari</b>: Statistika nazariyasi, amaliy statistika,
+                xalqaro statistika, statistik prognozlash, tashqi savdo statistikasi.
+                Statistika kafedrasiga Ayubjonov A.H. i.f.n. dotsent 2007 yildan boshlab hozirgi davrgacha rahbarlik
+                qilib kelmoqda.
 
-            </div>
+            </p>
+
         </div>
     </div>
+    <div class="blog2">
+        <img src="{% static 'img/statistika.png' %}" alt="">
+    </div>
+</div>
 
-  
-    <footer>
 
-        <span class="s1"></span>
-        <span class="s2"></span>
-        <span class="s3"></span>
-        <span class="s4"></span>
-        <span class="s5"></span>
-        <span class="s6"></span>
+<div class="navbar2">
+    <div class="blog2">
+        <img src="{% static 'img/suniy_intelekt.png' %}" alt="">
+    </div>
+    <div class="blog1">
+        <div class="box1">
+            <span></span>
+            <h2>Sun’iy intellekt</h2>
+        </div>
+        <div class="box2">
+            <a href="{% url 'suniy_intelect' %}">Sun’iy intellekt turlari </a>
+            <p>
+                Sun’iy intellekt kafedrasi Toshkent davlat iqtisodiyot universiteti
+                rektorining 359-sonli buyrug’iga asosan, 2022 yil 1
+                dekabrda tashkil etildi.
+            </p>
+            <p>
+                Toshkent davlat iqtisodiyot universitetida Sun’iy intellekt kafedrasi universitetning o‘quv,
+                o‘quv-uslubiy va moddiy texnik bazasi ushbu ta’lim
+                sohasida yuqori malakali kadrlar tayyorlashga imkon beradi. Ushbu olib borilayotgan barcha tizimli
+                islohotlar O‘zbekistonning
+                barcha iqtisodiyot sohalarida raqamli trasformatsiya jarayonini jadallashtiradi va sun’iy intellekt
+                texnologiyalari keng joriy etish imkoniyatini taqdim etadi.
+            </p>
+
+        </div>
+    </div>
+</div>
+<div class="navbar1">
+    <div class="blog1">
+        <div class="box1">
+            <span></span>
+            <h2>Raqamli iqtisodiyot va axborot texnologiyalari</h2>
+        </div>
+        <div class="box2">
+            <a href="{% url 'statica' %}">Raqamli iqtisodiyot va axborot texnologiyalari turlari </a>
+            <p>
+                Raqamli iqtisodiyot va axborot texnologiyalari kafedrasi 1973 yilda tashkil etilgan.
+                Kafedra 1973-1980 yillarda “Iqtisodiy axborotni mashinada qayta ishlashni tashkil etish”, 1980-1987
+                yillarda “Axborotni qayta ishlash tizimini avtomatlashtirish”, 1987-2006 yillarda “Iqtisodiy
+                informatika”, 2006-2015 yillarda “Axborot tizimlari” yo‘nalishlarida ishlagan. iqtisodiyotda”, 2015
+                yildan 2020 yilgacha – “Iqtisodiyotda axborot texnologiyalari.
+                1973-1980 o‘quv yilida kafedrada “Iqtisodiy axborotni mashinada qayta ishlashni tashkil etish”,
+                1980-1995 yillarda “Avtomatlashtirilgan boshqaruv tizimlari”, 1995-1999 yillarda “Axborot tizimlari va
+                texnologiyalari” mutaxassisliklari bo‘yicha mutaxassislar tayyorlandi.
+
+            </p>
+            <p>
+                1999 yildan boshlab “Axborot tizimlari va texnologiyalari” ta’lim yo‘nalishi bo‘yicha bakalavrlar,
+                “Iqtisodiyotda axborot texnologiyalari va tizimlari” mutaxassisligi bo‘yicha magistrlar tayyorlash
+                boshlandi.
+                2020 yildan hozirgi kunga qadar kafedra “Raqamli iqtisodiyot va axborot texnologiyalari” deb nomlanadi.
+
+            </p>
+
+        </div>
+    </div>
+    <div class="blog2">
+        <img src="{% static 'img/raqamlieconomy.png' %}" alt="">
+    </div>
+</div>
+<div class="navbar2">
+    <div class="blog2">
+        <img src="{% static 'img/iqtsodiyxavfsizlik.png' %}" alt="">
+    </div>
+    <div class="blog1">
+        <div class="box1">
+            <span></span>
+            <h2>Iqtisodiy Xavfsizlik</h2>
+        </div>
+        <div class="box2">
+            <a href="{% url 'suniy_intelect' %}">Iqtisodiy Xavfsizlik turlari </a>
+            <p>
+                60310400 – Iqtisodiy xavfsizlik bakalavriyat ta’lim yo‘nalishi – fan va ishlab chiqarish sohasidagi
+                ta’lim yo‘nalishi bo‘lib, qo‘yidagilardan iborat: jamiyat, davlat va shaxs hamda xo‘jalik faoliyati
+                subyektlarining iqtisodiy xavfsizligini ta’minlash, iqtisodiyot sohasidagi huquq-tartibot va
+                qonuniylikni ta’minlash, turli mulk shakllariga tegishli, turli tarmoq, sohalarning xo‘jalik yurituvchi
+                subyektlar. </p>
+            <p>
+
+                70310401 – Iqtisodiy xavfsizlik – “Ijtimoiy va xulq atvorga mansub fanlar” ta’lim sohasiga oid
+                mutaxassislik bo‘lib, u barcha ta’lim muassasalarida mutaxassislikka oid fanlarni o‘qitish.
+                O‘zbekiston Respublikasi Fanlar akademiyasi va tarmoq ilmiy tadqiqot institutlari, markazlari, ilmiy
+                ishlab chiqarish birlashmalarda ilmiy tadqiqot faoliyatini yuritish, turli mulkchilik shaklidagi
+                korxonalarida, nodavlat va notijorat tashkilotlarida, markaziy va mahalliy davlat boshqaruvi
+                organlarida.O‘zbekiston Respublikasi Fanlar akademiyasi va tarmoq ilmiy tadqiqot institutlari,
+                markazlari.
+
+            </p>
+
+        </div>
+    </div>
+</div>
+
+<div class="navbar1">
+    <div class="blog1">
+        <div class="box1">
+            <span></span>
+            <h2>Amaliy Matematika</h2>
+        </div>
+        <div class="box2">
+            <a href="{% url 'statica' %}">Amaliy matematika turlari </a>
+            <p>
+                1931 yil Toshkentda Moliya institutiga asos solinishi bilanoq «Oliy matematika va statistika» kafedrasi
+                tashkil qilindi. Keyinchalik bu kafedradan 1957 yil «Statistika», 1962 yil «Hisoblash texnikasi», 1970
+                yil «Ehtimollar nazariyasi va matematik statistika» kafedralari ajralib chiqdi.
+
+            </p>
+            <p>
+                35 yillik faoliyatidan keyin «Ehtimollar nazariyasi va matematik statistika» kafedrasi 2005 yil
+                sentyabrdan yana «Oliy matematika» kafedrasiga qo‘shildi va 2020 yildan «Amaliy matematika» kafedrasi
+                deb nomlandi.
+
+            </p>
+
+        </div>
+    </div>
+    <div class="blog2">
+        <img src="{% static 'img/matematika1.png' %}" alt="">
+    </div>
+</div>
+
+
+<footer>
+
+    <span class="s1"></span>
+    <span class="s2"></span>
+    <span class="s3"></span>
+    <span class="s4"></span>
+    <span class="s5"></span>
+    <span class="s6"></span>
 
     <div class="blog1">
         <div class="box1">
@@ -105,7 +206,7 @@
         <div class="box3">
             <a href="#"><img src="img/kontr1.png" alt=""></a>
             <a href="#"><img src="img/kontr2.png" alt=""></a>
-           <a href="#"> <img src="img/kontr3.png" alt=""></a>
+            <a href="#"> <img src="img/kontr3.png" alt=""></a>
         </div>
     </div>
     <div class="blog2">
@@ -123,7 +224,7 @@
             <div class="lin3">
                 <h2>Kafedralar</h2>
                 <a href="#">Iqtisodiy xavfsizlik</a>
-                <a href="#">Raqamli iqtisodiyot va axborot 
+                <a href="#">Raqamli iqtisodiyot va axborot
                     texnologiyalari</a>
                 <a href="#">Innovatsion ta’lim</a>
                 <a href="#">Iqtisodiyotda matematik metodlar</a>
@@ -147,6 +248,6 @@
             <a href="#">@mail.com</a>
         </div>
     </div>
-    </footer>
+</footer>
 </body>
 </html>

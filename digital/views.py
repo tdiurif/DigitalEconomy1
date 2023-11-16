@@ -78,3 +78,5 @@ def ScoreBallsView(request):
 
 def StaticaView(request):
     return render(request,'statica.html')
+def AIView(request):
+    return render(request,'suniy_intelekt.html')
