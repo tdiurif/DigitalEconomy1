@@ -9,141 +9,169 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-    <div class="menu">
-        <ul>
-            <li>
-                <a href="index.html">
-                    <img src="{%  static 'img/logo.png' %}" alt="">
-                    <p>Raqamli iqtisodiyot</p>
-                </a>
-            </li>
-            <li><a href="{% url 'about' %}">Fakultetlar haqida</a></li>
-            <li><a href="{% url 'tech' %}">Ta’lim</a></li>
-            <li><a href="fiveindex.html">Kafedralar</a></li>
-            <li><a href="sixindex.html">Tadqiqotlar</a></li>
-        </ul>
-    </div>
-    <div class="num">
-        <h2>
-            Ta’lim
-        </h2>
-    </div>
-    <div class="bg1"></div>
-    <div class="blog">
-        <div class="boxone">
-            <div class="fonone"></div>
-            <div class="fontwo"></div>
-            <div class="imgblog">
-                <img src="{% static 'img/Rectangle 304.png' %}" alt="">
-                <img src="{%  static 'img/Rectangle 305.png' %}" alt="">
-            </div>
-        </div>
-        <div class="boxtwo">
-            <h2>Bakalaviatura</h2>
-            <p>
-                Raqamli iqtisodiyot insonlarning turmush darajasini sezilarli darajada oshiradi, bu uning asosiy foydasidir.
-            </p>
-            <p>
-                Raqamli iqtisodiyot korrupsiya va “qora iqtisodiyot”ning asosiy kushandasidir. Chunki, raqamlar hamma narsani muhrlaydi, xotirada saqlaydi, kerak paytda ma`lumotlarni tez taqdim etadi. Bunday sharoitda biron ma`lumotni yashirish, yashirin bitimlar tuzish, u yoki bu faoliyat haqida to`liq axborot bermaslikning iloji yo`q, kompyuter hammasini namoyon qilib qo`yadi. Ma`lumotlar ko`pligi va tizimliligi yolg`on va qin`ir ishlarga yo`l bermaydi, chunki tizimni aldash imkonsiz. Natijada “iflos pullarni” yuvish, mablag`larni o`g`irlash, samarasiz va maqsadsiz sarflash, oshirib yo yashirib ko`rsatish imkoni qolmaydi. Bu esa iqtisodiyotga legal mablag`lar oqimini oshiradi, soliqlar o`z vaqtida va to`g`ri to`lanadi, byudjet taqsimoti ochiq bo`ladi, ijtimoiy sohaga yo`naltirilgan mablag`lar o`g`irlanmaydi, maktablar, kasalxonalar, yo`llarga ajratilgan pullar to`liq yetib boradi va hokazo.
-            </p>
-            <p>
-                Davlatning raqamli iqtisodiyotni rivojlantirish yo`lini tanlaganligi axborot texnologiyalari sohasida va umuman, elektron hujjatlar aylanmasi sohasida yangi yo`nalishlar ochib beradi. “Raqamli texnologiyalar” tomon burilishga butun jahon internet tarmog`i va sifatli aloqaning rivojlanishi sababchi bo`ldi.
-            </p>
+<div class="menu">
+    <ul>
+        <li>
+            <a href="{% url 'home'%}">
+                <img src="{%  static 'img/logo.png' %}" alt="">
+                <p>Raqamli iqtisodiyot</p>
+            </a>
+        </li>
+        <li><a href="{% url 'about' %}">Fakultet haqida</a></li>
+        <li><a href="{% url 'tech' %}">Ta'lim</a></li>
+        <li><a href="{% url 'departament' %}">Kafedralar</a></li>
+        <li><a href="{% url 'tadqiqot' %}">Tadqiqotlar</a></li>
+    </ul>
+</div>
+<div class="num">
+    <h2>
+        Ta’lim
+    </h2>
+</div>
+<div class="bg1"></div>
+<div class="blog">
+    <div class="boxone">
+        <div class="fonone"></div>
+        <div class="fontwo"></div>
+        <div class="imgblog">
+            <img src="{% static 'img/Rectangle 304.png' %}" alt="">
+            <img src="{%  static 'img/Rectangle 305.png' %}" alt="">
         </div>
     </div>
-    <div class="navbar">
-        <div class="blog1">
-            <img src="{%  static 'img/image 546.png' %}" alt="">
-        </div>
-        <div class="blog2">
-            <h2>Magistratura</h2>
-            <p>
-                Raqamli iqtisodiyot insonlarning turmush darajasini sezilarli darajada oshiradi, bu uning asosiy foydasidir.
-            </p>
-            <p>
-                Raqamli iqtisodiyot korrupsiya va “qora iqtisodiyot”ning asosiy kushandasidir. Chunki, raqamlar hamma narsani muhrlaydi, xotirada saqlaydi, kerak paytda ma’lumotlarni tez taqdim etadi. Bunday sharoitda biron ma’lumotni yashirish, yashirin bitimlar tuzish, u yoki bu faoliyat haqida to‘liq axborot bermaslikning iloji yo‘q, kompyuter hammasini namoyon qilib qo‘yadi. Ma’lumotlar ko‘pligi va tizimliligi yolg‘on va qing‘ir ishlarga yo‘l bermaydi, chunki tizimni aldash imkonsiz. Natijada “iflos pullarni” yuvish, mablag‘larni o‘g‘irlash, samarasiz va maqsadsiz sarflash, oshirib yo yashirib ko‘rsatish imkoni qolmaydi. Bu esa iqtisodiyotga legal mablag‘lar oqimini oshiradi, soliqlar o‘z vaqtida va to‘g‘ri to‘lanadi, byudjet taqsimoti ochiq bo‘ladi, ijtimoiy sohaga yo‘naltirilgan mablag‘lar o‘g‘irlanmaydi, maktablar, kasalxonalar, yo‘llarga ajratilgan pullar to‘liq yetib boradi va hokazo.
-            </p>
-            <p>
-                Davlatning raqamli iqtisodiyotni rivojlantirish yo‘lini tanlaganligi axborot texnologiyalari sohasida va umuman, elektron hujjatlar aylanmasi sohasida yangi yo‘nalishlar ochib beradi. “Raqamli texnologiyalar” tomon burilishga butun jahon internet tarmog‘i va sifatli aloqaning rivojlanishi sababchi bo‘ldi.
-            </p>
-            <p>
-                Prezident Shavkat Mirziyoevning Oliy Majlis Senati va Qonunchilik palatasiga qilgan Murojaatnomasida “2020-yil – Ilm- ma’rifat va raqamli iqtisodiyot yili” deb e’lon qilindi. Shundan keyin fuqarolarda “raqamli iqtisodiyot” atamasi haqida ko‘plab savollar tug‘ila boshladi.
-            </p>
-            <p>
-                Raqamli iqtisodiyot – bu iqtisodiy, ijtimoiy va madaniy aloqalarni raqamli texnologiyalarni qo‘llash asosida amalga oshirish tizimidir. Ba’zida u internet iqtisodiyoti, yangi iqtisodiyot yoki veb-iqtisodiyot degan terminlar bilan ham ifodalanadi.
-            </p>
-        </div>
+    <div class="boxtwo">
+        <h2>Bakalaviatura</h2>
+        <p>
+            Raqamli iqtisodiyot insonlarning turmush darajasini sezilarli darajada oshiradi, bu uning asosiy foydasidir.
+        </p>
+        <p>
+            Raqamli iqtisodiyot korrupsiya va “qora iqtisodiyot”ning asosiy kushandasidir. Chunki, raqamlar hamma
+            narsani muhrlaydi, xotirada saqlaydi, kerak paytda ma`lumotlarni tez taqdim etadi. Bunday sharoitda biron
+            ma`lumotni yashirish, yashirin bitimlar tuzish, u yoki bu faoliyat haqida to`liq axborot bermaslikning iloji
+            yo`q, kompyuter hammasini namoyon qilib qo`yadi. Ma`lumotlar ko`pligi va tizimliligi yolg`on va qin`ir
+            ishlarga yo`l bermaydi, chunki tizimni aldash imkonsiz. Natijada “iflos pullarni” yuvish, mablag`larni
+            o`g`irlash, samarasiz va maqsadsiz sarflash, oshirib yo yashirib ko`rsatish imkoni qolmaydi. Bu esa
+            iqtisodiyotga legal mablag`lar oqimini oshiradi, soliqlar o`z vaqtida va to`g`ri to`lanadi, byudjet
+            taqsimoti ochiq bo`ladi, ijtimoiy sohaga yo`naltirilgan mablag`lar o`g`irlanmaydi, maktablar, kasalxonalar,
+            yo`llarga ajratilgan pullar to`liq yetib boradi va hokazo.
+        </p>
+        <p>
+            Davlatning raqamli iqtisodiyotni rivojlantirish yo`lini tanlaganligi axborot texnologiyalari sohasida va
+            umuman, elektron hujjatlar aylanmasi sohasida yangi yo`nalishlar ochib beradi. “Raqamli texnologiyalar”
+            tomon burilishga butun jahon internet tarmog`i va sifatli aloqaning rivojlanishi sababchi bo`ldi.
+        </p>
     </div>
-    <div class="navbar2">
-        <div class="blog1">
-            <p><a href="#">TESTIMONIALS</a></p>
-            <h2>Talabalarimiz nima deydi?</h2>
+</div>
+<div class="navbar">
+    <div class="blog1">
+        <img src="{%  static 'img/image 546.png' %}" alt="">
+    </div>
+    <div class="blog2">
+        <h2>Magistratura</h2>
+        <p>
+            Raqamli iqtisodiyot insonlarning turmush darajasini sezilarli darajada oshiradi, bu uning asosiy foydasidir.
+        </p>
+        <p>
+            Raqamli iqtisodiyot korrupsiya va “qora iqtisodiyot”ning asosiy kushandasidir. Chunki, raqamlar hamma
+            narsani muhrlaydi, xotirada saqlaydi, kerak paytda ma’lumotlarni tez taqdim etadi. Bunday sharoitda biron
+            ma’lumotni yashirish, yashirin bitimlar tuzish, u yoki bu faoliyat haqida to‘liq axborot bermaslikning iloji
+            yo‘q, kompyuter hammasini namoyon qilib qo‘yadi. Ma’lumotlar ko‘pligi va tizimliligi yolg‘on va qing‘ir
+            ishlarga yo‘l bermaydi, chunki tizimni aldash imkonsiz. Natijada “iflos pullarni” yuvish, mablag‘larni
+            o‘g‘irlash, samarasiz va maqsadsiz sarflash, oshirib yo yashirib ko‘rsatish imkoni qolmaydi. Bu esa
+            iqtisodiyotga legal mablag‘lar oqimini oshiradi, soliqlar o‘z vaqtida va to‘g‘ri to‘lanadi, byudjet
+            taqsimoti ochiq bo‘ladi, ijtimoiy sohaga yo‘naltirilgan mablag‘lar o‘g‘irlanmaydi, maktablar, kasalxonalar,
+            yo‘llarga ajratilgan pullar to‘liq yetib boradi va hokazo.
+        </p>
+        <p>
+            Davlatning raqamli iqtisodiyotni rivojlantirish yo‘lini tanlaganligi axborot texnologiyalari sohasida va
+            umuman, elektron hujjatlar aylanmasi sohasida yangi yo‘nalishlar ochib beradi. “Raqamli texnologiyalar”
+            tomon burilishga butun jahon internet tarmog‘i va sifatli aloqaning rivojlanishi sababchi bo‘ldi.
+        </p>
+        <p>
+            Prezident Shavkat Mirziyoevning Oliy Majlis Senati va Qonunchilik palatasiga qilgan Murojaatnomasida
+            “2020-yil – Ilm- ma’rifat va raqamli iqtisodiyot yili” deb e’lon qilindi. Shundan keyin fuqarolarda “raqamli
+            iqtisodiyot” atamasi haqida ko‘plab savollar tug‘ila boshladi.
+        </p>
+        <p>
+            Raqamli iqtisodiyot – bu iqtisodiy, ijtimoiy va madaniy aloqalarni raqamli texnologiyalarni qo‘llash asosida
+            amalga oshirish tizimidir. Ba’zida u internet iqtisodiyoti, yangi iqtisodiyot yoki veb-iqtisodiyot degan
+            terminlar bilan ham ifodalanadi.
+        </p>
+    </div>
+</div>
+<div class="navbar2">
+    <div class="blog1">
+        <p><a href="#">TESTIMONIALS</a></p>
+        <h2>Talabalarimiz nima deydi?</h2>
+        <p>
+            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et
+            dolore magna
+        </p>
+    </div>
+    <div class="blog2">
+        <div class="box1">
+            <img src="img/belgi.png" alt="">
             <p>
-                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna 
+                I'm a huge fan of Learnit courses! I've been using them for years and the content is always really
+                relevant and up to date
             </p>
-        </div>
-        <div class="blog2">
-            <div class="box1">
-                <img src="img/belgi.png" alt="">
-                <p>
-                    I'm a huge fan of Learnit courses! I've been using them for years and the content is always really relevant and up to date
-                </p>
-                <div class="star">
-                    <div class="var">
-                        <span class="fa fa-star checked"></span>
-                        <span class="fa fa-star checked"></span>
-                        <span class="fa fa-star checked"></span>
-                        <span class="fa fa-star checked"></span>
-                        <span class="fa fa-star"></span>
-                        <p>Danial Walkman</p>
-                    </div>
-                    <img src="img/3-oyna oqiri (2).png" alt="">
+            <div class="star">
+                <div class="var">
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star"></span>
+                    <p>Danial Walkman</p>
                 </div>
+                <img src="img/3-oyna oqiri (2).png" alt="">
             </div>
-            <div class="box1">
-                <img src="img/belgi.png" alt="">
-                <p>
-                    I'm a huge fan of Learnit courses! I've been using them for years and the content is always really relevant and up to date
-                </p>
-                <div class="star">
-                    <div class="var">
-                        <span class="fa fa-star checked"></span>
-                        <span class="fa fa-star checked"></span>
-                        <span class="fa fa-star checked"></span>
-                        <span class="fa fa-star checked"></span>
-                        <span class="fa fa-star"></span>
-                        <p>Danial Walkman</p>
-                    </div>
-                    <img src="img/3-oyna oqiri (2).png" alt="">
+        </div>
+        <div class="box1">
+            <img src="img/belgi.png" alt="">
+            <p>
+                I'm a huge fan of Learnit courses! I've been using them for years and the content is always really
+                relevant and up to date
+            </p>
+            <div class="star">
+                <div class="var">
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star"></span>
+                    <p>Danial Walkman</p>
                 </div>
+                <img src="img/3-oyna oqiri (2).png" alt="">
             </div>
-            <div class="box1">
-                <img src="img/belgi.png" alt="">
-                <p>
-                    I'm a huge fan of Learnit courses! I've been using them for years and the content is always really relevant and up to date
-                </p>
-                <div class="star">
-                    <div class="var">
-                        <span class="fa fa-star checked"></span>
-                        <span class="fa fa-star checked"></span>
-                        <span class="fa fa-star checked"></span>
-                        <span class="fa fa-star checked"></span>
-                        <span class="fa fa-star"></span>
-                        <p>Danial Walkman</p>
-                    </div>
-                    <img src="img/3-oyna oqiri (2).png" alt="">
+        </div>
+        <div class="box1">
+            <img src="img/belgi.png" alt="">
+            <p>
+                I'm a huge fan of Learnit courses! I've been using them for years and the content is always really
+                relevant and up to date
+            </p>
+            <div class="star">
+                <div class="var">
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star"></span>
+                    <p>Danial Walkman</p>
                 </div>
+                <img src="img/3-oyna oqiri (2).png" alt="">
             </div>
         </div>
     </div>
-    <footer>
+</div>
+<footer>
 
-        <span class="s1"></span>
-        <span class="s2"></span>
-        <span class="s3"></span>
-        <span class="s4"></span>
-        <span class="s5"></span>
-        <span class="s6"></span>
+    <span class="s1"></span>
+    <span class="s2"></span>
+    <span class="s3"></span>
+    <span class="s4"></span>
+    <span class="s5"></span>
+    <span class="s6"></span>
 
     <div class="blog1">
         <div class="box1">
@@ -155,7 +183,7 @@
         <div class="box3">
             <a href="#"><img src="img/kontr1.png" alt=""></a>
             <a href="#"><img src="img/kontr2.png" alt=""></a>
-           <a href="#"> <img src="img/kontr3.png" alt=""></a>
+            <a href="#"> <img src="img/kontr3.png" alt=""></a>
         </div>
     </div>
     <div class="blog2">
@@ -173,7 +201,7 @@
             <div class="lin3">
                 <h2>Kafedralar</h2>
                 <a href="#">Iqtisodiy xavfsizlik</a>
-                <a href="#">Raqamli iqtisodiyot va axborot 
+                <a href="#">Raqamli iqtisodiyot va axborot
                     texnologiyalari</a>
                 <a href="#">Innovatsion ta’lim</a>
                 <a href="#">Iqtisodiyotda matematik metodlar</a>
@@ -197,6 +225,6 @@
             <a href="#">@mail.com</a>
         </div>
     </div>
-    </footer>
+</footer>
 </body>
 </html>

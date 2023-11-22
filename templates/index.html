@@ -8,238 +8,269 @@
     <link rel="stylesheet" href="{% static 'css/style.css' %}">
 </head>
 <body>
-    <div class="bgimg"></div>
-    <header>
-        <div class="blog1">
-            <img src="{%  static 'img/logo.png' %}" alt="">
-            <ul>
-                <li><a href="{% url 'about' %}">Fakultet haqida</a></li>
-                <li><a href="{% url 'tech' %}">Ta'lim</a></li>
-                <li><a href="{% url 'departament' %}">Kafedralar</a></li>
-                <li><a href="{% url 'tadqiqot' %}">Tadqiqotlar</a></li>
-            </ul>
-        </div>
-        <div class="blog2">
-            <div class="aloqa">
-                <div class="tel">
-                    <img src="{% static 'img/tel.png' %}" alt="">
-                    <a href="#"><p> +(998) 71 239 01 29</p></a>
-                </div>
-                <span></span>
-                <div class="search">
-                    <form action="#">
-                        <img src="{% static 'img/qidir.png' %}" alt="">
-                        <input type="text" name="" id="" placeholder="Qidirish">
-                    </form>
-                </div>
-            </div>
-        </div>
-    </header>
-    <div class="navbar">
-   
-        <div class="boshqaru">
-            <div class="items">
-
-                <div class="item active">
-                    <img src="{{ imga.image.url }}">
-                </div>
-                <div class=" item next">
-                    <img src="{{ imgn.image.url }}">
-                </div>
-
-                {% for image in images %}
-                    <div class="item">
-                        <img src="{{ image.image.url }}">
-                    </div>
-                {% endfor %}
-                <div class="item prev">
-                    <img src="{{ imgp.image.url }}">
-                </div>
-                <div class="button-container">
-                    <img src="{% static 'img/1-oyna pref.png' %}" alt="" class="button">
-                    <img src="{% static 'img/1-oyna nex.png' %}" alt="" class="button">
-                </div>
-            </div>
-        </div>
-        
+<div class="bgimg"></div>
+<header>
+    <div class="blog1">
+        <img src="{%  static 'img/logo.png' %}" alt="">
+        <ul>
+            <li><a href="{% url 'about' %}">Fakultet haqida</a></li>
+            <li><a href="{% url 'tech' %}">Ta'lim</a></li>
+            <li><a href="{% url 'departament' %}">Kafedralar</a></li>
+            <li><a href="{% url 'tadqiqot' %}">Tadqiqotlar</a></li>
+        </ul>
     </div>
-    <div class="bg1"></div>
-    <div class="navbar2">
-        <div class="blog1">
-            <div class="box">
-                <img src="{% static 'img/icon1.png' %}" alt="">
-                <a href="{% url 'faculty_life' %}">Fakultet hayoti</a>
+    <div class="blog2">
+        <div class="aloqa">
+            <div class="tel">
+                <img src="{% static 'img/tel.png' %}" alt="">
+                <a href="#"><p> +(998) 71 239 01 29</p></a>
             </div>
-            <div class="box">
-                <img src="{% static 'img/icon2.png' %}" alt="">
-                <a href="{% url 'faculty_sport' %}">Fakultetda sport</a>
-            </div>
-            <div class="box">
-                <img src="{%  static 'img/icon3.png' %}" alt="">
-                <a href="{% url 'social_project' %}">Ijtimoiy loyihalar</a>
-            </div>
-        </div>
-        <div class="blog2">
-            <div class="box1">
-                <img src="{%  static 'img/birinchi oyna img 2.png' %}" alt="">
-                <img src="{%  static 'img/oyna_11_2.png' %}" alt="">
-            </div>
-            <div class="box2">
-                <img src="{% static 'img/olti1.png' %}" alt="">
-            </div>
-            <div class="box3">
-                
-                <p>
-                    Bugungi kunda raqamli texnologiyalar zamonaviy jamiyat hayotining barcha sohalariga, jumladan, iqtisodiyot sohasiga ham faol kirib bormoqda. Iqtisodiyotni raqamlashtirish global iqtisodiyotda iqtisodiy o‘sishning muhim omiliga aylanmoqda. Shuning uchun O‘zbekistonda iqtisodiyot tarmoqlari, ijtimoiy soha va davlat boshqaruvi tizimining jadal raqamli rivojlanishini taʼminlash muhim ahamiyat kasb etmoqda. Ushbu maqsadlarga erishishni taʼminlash tahliliy va ilmiy-uslubiy tadqiqotlar va innovatsion o‘zgarishlarni talab qiladi. Bunday o‘zgarishlar esa raqamli iqtisodiyot sharoitida nazariy va tahliliy bilimlar va ko‘nikmalarga ega yuqori malakali mutaxassislarni tayyorlashni talab qiladi.
-                </p>
-                <p>
-                    1968-yilda «Iqtisodiy kibernetika» mutaxassisligining ochilishi bilan «Iqtisodiy kibernetika fakulteti tashkil etildi. 2020-yildan boshlab Raqamli iqtisodiyot fakulteti nomi atala boshlandi.
-                </p>
-            </div>
-        </div>
-    </div>
-    <div class="bg2"></div>
-    <div class="navbar3">
-        <div class="box1">
-            <img src="{%  static 'img/birinchi oyna img1.png' %}" alt="">
-            
-        </div>
-        <div class="box2">
-            <p>10,000+</p>
-            <p>Ortiq talabalar va loyihalar</p>
             <span></span>
-            <div class="box3">
-                <div class="imgbox">
-                    <img src="{%  static 'img/birinchi oyna slayder3.png' %}" alt="">
-                    <img src="{%  static 'img/birinchi oyna slayder3.png' %}" alt="">
-                </div>
-                <div class="imgbox">
-                    <img src="{%  static 'img/birinchi oyna slayder3.png' %}" alt="">
-                    <img src="{%  static 'img/birinchi oyna slayder3.png' %}" alt="">
-                    <img src="{%  static 'img/birinchi oyna slayder3.png' %}" alt="">
-                    <img src="{%  static 'img/birinchi oyna slayder3.png' %}" alt="">
-                 
-                </div>
-                <div class="imgbox">
-                    <img src="{%  static 'img/birinchi oyna slayder3.png' %}" alt="">
-                    <img src="{%  static 'img/birinchi oyna slayder3.png' %}" alt="">
-                    <img src="{%  static 'img/birinchi oyna slayder3.png' %}" alt="">
-                </div>
+            <div class="search">
+                <form action="#">
+                    <img src="{% static 'img/qidir.png' %}" alt="">
+                    <input type="text" name="" id="" placeholder="Qidirish">
+                </form>
             </div>
-            <div class="box3">
-                <div class="imgbox">
-                    <img src="{%  static 'img/birinchi oyna slayder3.png' %}" alt="">
-                    <img src="{%  static 'img/birinchi oyna slayder3.png' %}" alt="">
-                </div>
-                <div class="imgbox">
-                    <img src="{%  static 'img/birinchi oyna slayder3.png' %}" alt="">
-                    <img src="{%  static 'img/birinchi oyna slayder3.png' %}" alt="">
-                    <img src="{%  static 'img/birinchi oyna slayder3.png' %}" alt="">
-                    <img src="{%  static 'img/birinchi oyna slayder3.png' %}" alt="">
-                </div>
-                <div class="imgbox">
-                    <img src="{%  static 'img/birinchi oyna slayder3.png' %}" alt="">
-                    <img src="{%  static 'img/birinchi oyna slayder3.png' %}" alt="">
-                    <img src="{%  static 'img/birinchi oyna slayder3.png' %}" alt="">
-                </div>
-            </div>
-            </div>
-            <div class="blog2">
-                <span></span>
-                <h2>Raqmli iqtisodiyot fakulteti haqida</h2>
-                <p>Toshkent davlat iqtisodiyot universitetining Raqamli iqtisodiyot fakulteti (RIF) dunyodagi eng tez rivojlanayotgan sohalardan biri bo‘lgani uchun yuqori sifatli tajriba va malakali inson salohiyatiga ega bo‘lgan kadrlarni tayyorlaydi. Bunga raqamli iqtisodiyot, innovatsion ta’lim, iqtisodiy xavfsizlik, iqtisodiyotda axborot tizimlari va texnologiyalari sohalarini qamrab oladigan o‘quv dasturlarimiz orqali erishiladi.</p>
-                <p>
-                    Raqamli iqtisodiyot fakulteti 1963-yilda “Iqtisodiy axborotlarni avtomatlashtirilgan usulda qayta ishlashni tashkil etish” mutaxassisligi bo‘yicha talabalar qabul qila boshlagan. 1968-yilda “Iqtisodiy kibernetika” mutaxassisligining ochilishi bilan Iqtisodiy kibernetika fakulteti tashkil etildi. Raqamli texnologiyalarning barcha sohalarga va odamlar hayotiga jadal kirib borishi tufayli 2020-yildan boshlab fakultet Raqamli iqtisodiyot nomi bilan atala boshlandi. 
-                </p>
-            </div>
+        </div>
     </div>
-    <div class="raqam">
-        <span></span>
-        <h2>Biz raqamlarda</h2>
+</header>
+<div class="navbar">
+
+    <div class="boshqaru">
+        <div class="items">
+
+            <div class="item active">
+                <img src="{{ imga.image.url }}">
+            </div>
+            <div class=" item next">
+                <img src="{{ imgn.image.url }}">
+            </div>
+
+            {% for image in images %}
+            <div class="item">
+                <img src="{{ image.image.url }}">
+            </div>
+            {% endfor %}
+            <div class="item prev">
+                <img src="{{ imgp.image.url }}">
+            </div>
+            <div class="button-container">
+                <img src="{% static 'img/1-oyna pref.png' %}" alt="" class="button">
+                <img src="{% static 'img/1-oyna nex.png' %}" alt="" class="button">
+            </div>
+        </div>
     </div>
-    <div class="navbar4">
+
+</div>
+<div class="bg1"></div>
+<div class="navbar2">
+    <div class="blog1">
+        <div class="box">
+            <img src="{% static 'img/icon1.png' %}" alt="">
+            <a href="{% url 'faculty_life' %}">Fakultet hayoti</a>
+        </div>
+        <div class="box">
+            <img src="{% static 'img/icon2.png' %}" alt="">
+            <a href="{% url 'faculty_sport' %}">Fakultetda sport</a>
+        </div>
+        <div class="box">
+            <img src="{%  static 'img/icon3.png' %}" alt="">
+            <a href="{% url 'social_project' %}">Ijtimoiy loyihalar</a>
+        </div>
+    </div>
+    <div class="blog">
         <div class="box1">
-            <h3>1,088</h3>
-            <p>Talabalar</p>
+            <img src="{% static 'img/dekan.jpg' %}" alt="">
+        </div>
+        <div class="fon"></div>
+        <div class="fon1"></div>
+        <div class="box2">
+            <h2>Akbarov Nodir Gafurovich</h2>
+            <p>Fakultet dekani</p>
+            <p>Kelajagingizga faqatgina o'zingiz masulsiz va uni o'zingiz belgilaysiz! Biz esa unda ishtrok etkanimiz
+                va ozgina xissa qo'shganimiz bilan shodmiz.</p>
+            <a href="#">
+                <button type="submit">Biz haqimizda</button>
+            </a>
+        </div>
+    </div>
+    <div class="blog2">
+        <div class="box1">
+            <img src="{%  static 'img/birinchi oyna img 2.png' %}" alt="">
+            <img src="{%  static 'img/oyna_11_2.png' %}" alt="">
         </div>
         <div class="box2">
-            <h3>130</h3>
-            <p> Malakali o’qituvchi va professorlar</p>
+            <img src="{% static 'img/olti1.png' %}" alt="">
         </div>
         <div class="box3">
-            <h3>20+</h3>
-            <p>Loyihalar</p>
-        </div>
-        <div class="box4">
-            <h3>6+</h3>
-            <p>Kafedralar</p>
+
+            <p>
+                Bugungi kunda raqamli texnologiyalar zamonaviy jamiyat hayotining barcha sohalariga, jumladan,
+                iqtisodiyot sohasiga ham faol kirib bormoqda. Iqtisodiyotni raqamlashtirish global iqtisodiyotda
+                iqtisodiy o‘sishning muhim omiliga aylanmoqda. Shuning uchun O‘zbekistonda iqtisodiyot tarmoqlari,
+                ijtimoiy soha va davlat boshqaruvi tizimining jadal raqamli rivojlanishini taʼminlash muhim ahamiyat
+                kasb etmoqda. Ushbu maqsadlarga erishishni taʼminlash tahliliy va ilmiy-uslubiy tadqiqotlar va
+                innovatsion o‘zgarishlarni talab qiladi. Bunday o‘zgarishlar esa raqamli iqtisodiyot sharoitida nazariy
+                va tahliliy bilimlar va ko‘nikmalarga ega yuqori malakali mutaxassislarni tayyorlashni talab qiladi.
+            </p>
+            <p>
+                1968-yilda «Iqtisodiy kibernetika» mutaxassisligining ochilishi bilan «Iqtisodiy kibernetika fakulteti
+                tashkil etildi. 2020-yildan boshlab Raqamli iqtisodiyot fakulteti nomi atala boshlandi.
+            </p>
         </div>
     </div>
-    <div class="navbar5">
-        <div class="blog1">
-            <a href="{% url 'score_ball' %}">
-                <img src="{%  static 'img/icon4.png' %}" alt="" style="margin-left: 120px;">
+</div>
+<div class="bg2"></div>
+<div class="navbar3">
+    <div class="box1">
+        <img src="{%  static 'img/birinchi oyna img1.png' %}" alt="">
+
+    </div>
+    <div class="box2">
+        <p>10,000+</p>
+        <p>Ortiq talabalar va loyihalar</p>
+        <span></span>
+        <div class="box3">
+            <div class="imgbox">
+                <img src="{%  static 'img/birinchi oyna slayder3.png' %}" alt="">
+                <img src="{%  static 'img/birinchi oyna slayder3.png' %}" alt="">
+            </div>
+            <div class="imgbox">
+                <img src="{%  static 'img/birinchi oyna slayder3.png' %}" alt="">
+                <img src="{%  static 'img/birinchi oyna slayder3.png' %}" alt="">
+                <img src="{%  static 'img/birinchi oyna slayder3.png' %}" alt="">
+                <img src="{%  static 'img/birinchi oyna slayder3.png' %}" alt="">
+
+            </div>
+            <div class="imgbox">
+                <img src="{%  static 'img/birinchi oyna slayder3.png' %}" alt="">
+                <img src="{%  static 'img/birinchi oyna slayder3.png' %}" alt="">
+                <img src="{%  static 'img/birinchi oyna slayder3.png' %}" alt="">
+            </div>
+        </div>
+        <div class="box3">
+            <div class="imgbox">
+                <img src="{%  static 'img/birinchi oyna slayder3.png' %}" alt="">
+                <img src="{%  static 'img/birinchi oyna slayder3.png' %}" alt="">
+            </div>
+            <div class="imgbox">
+                <img src="{%  static 'img/birinchi oyna slayder3.png' %}" alt="">
+                <img src="{%  static 'img/birinchi oyna slayder3.png' %}" alt="">
+                <img src="{%  static 'img/birinchi oyna slayder3.png' %}" alt="">
+                <img src="{%  static 'img/birinchi oyna slayder3.png' %}" alt="">
+            </div>
+            <div class="imgbox">
+                <img src="{%  static 'img/birinchi oyna slayder3.png' %}" alt="">
+                <img src="{%  static 'img/birinchi oyna slayder3.png' %}" alt="">
+                <img src="{%  static 'img/birinchi oyna slayder3.png' %}" alt="">
+            </div>
+        </div>
+    </div>
+    <div class="blog2">
+        <span></span>
+        <h2>Raqmli iqtisodiyot fakulteti haqida</h2>
+        <p>Toshkent davlat iqtisodiyot universitetining Raqamli iqtisodiyot fakulteti (RIF) dunyodagi eng tez
+            rivojlanayotgan sohalardan biri bo‘lgani uchun yuqori sifatli tajriba va malakali inson salohiyatiga ega
+            bo‘lgan kadrlarni tayyorlaydi. Bunga raqamli iqtisodiyot, innovatsion ta’lim, iqtisodiy xavfsizlik,
+            iqtisodiyotda axborot tizimlari va texnologiyalari sohalarini qamrab oladigan o‘quv dasturlarimiz orqali
+            erishiladi.</p>
+        <p>
+            Raqamli iqtisodiyot fakulteti 1963-yilda “Iqtisodiy axborotlarni avtomatlashtirilgan usulda qayta ishlashni
+            tashkil etish” mutaxassisligi bo‘yicha talabalar qabul qila boshlagan. 1968-yilda “Iqtisodiy kibernetika”
+            mutaxassisligining ochilishi bilan Iqtisodiy kibernetika fakulteti tashkil etildi. Raqamli
+            texnologiyalarning barcha sohalarga va odamlar hayotiga jadal kirib borishi tufayli 2020-yildan boshlab
+            fakultet Raqamli iqtisodiyot nomi bilan atala boshlandi.
+        </p>
+    </div>
+</div>
+<div class="raqam">
+    <span></span>
+    <h2>Biz raqamlarda</h2>
+</div>
+<div class="navbar4">
+    <div class="box1">
+        <h3>1,088</h3>
+        <p>Talabalar</p>
+    </div>
+    <div class="box2">
+        <h3>130</h3>
+        <p> Malakali o’qituvchi va professorlar</p>
+    </div>
+    <div class="box3">
+        <h3>20+</h3>
+        <p>Loyihalar</p>
+    </div>
+    <div class="box4">
+        <h3>6+</h3>
+        <p>Kafedralar</p>
+    </div>
+</div>
+<div class="navbar5">
+    <div class="blog1">
+        <a href="{% url 'score_ball' %}">
+            <img src="{%  static 'img/icon4.png' %}" alt="" style="margin-left: 120px;">
             <h3>Abiturientlarga</h3>
-                <p>
-                    Abiturientlarga Abiturientlarga foydali ma’lumotlar, savollarga javobla, kvotalar soni
-                </p>
-            </a>
-        </div>
-        <div class="blog2">
-            <a href="">
-                <img src="{%  static 'img/icon5.png' %}" alt="">
+            <p>
+                Abiturientlarga Abiturientlarga foydali ma’lumotlar, savollarga javobla, kvotalar soni
+            </p>
+        </a>
+    </div>
+    <div class="blog2">
+        <a href="">
+            <img src="{%  static 'img/icon5.png' %}" alt="">
             <h3>Talabalarga</h3>
-                <p>Talabarning universitetdagi o’qish faoliyati va hayoti</p>
-            </a>
-        </div>
-        <div class="blog3">
-           <a href="">
+            <p>Talabarning universitetdagi o’qish faoliyati va hayoti</p>
+        </a>
+    </div>
+    <div class="blog3">
+        <a href="">
             <img src="{%  static 'img/icon6.png' %}" alt="">
             <h3>Bitiruvchilar</h3>
-                <p>Joriy yildagi bitiruvchi talabalar haqida</p>
-           </a>
-        </div>
+            <p>Joriy yildagi bitiruvchi talabalar haqida</p>
+        </a>
     </div>
-    <div class="navbar6">
-        <div class="raqam1">
-            <span></span>
-            <h2>Hamkorlarimiz</h2>
-        </div>
-        <div class="blog1">
-            <img src="{%  static 'img/hamkor1.png' %}" alt="">
-            <img src="{%  static 'img/hamkor2.png' %}" alt="">
-            <img src="{%  static 'img/hamkor3.png' %}" alt="">
-            <img src="{%  static 'img/hamko4.png' %}" alt="">
-        </div>
-    </div>
-    <div class="yangilik">
+</div>
+<div class="navbar6">
+    <div class="raqam1">
         <span></span>
-        <h3>Yangiliklar</h3>
+        <h2>Hamkorlarimiz</h2>
     </div>
-  <div class="wrapper1">
+    <div class="blog1">
+        <img src="{%  static 'img/hamkor1.png' %}" alt="">
+        <img src="{%  static 'img/hamkor2.png' %}" alt="">
+        <img src="{%  static 'img/hamkor3.png' %}" alt="">
+        <img src="{%  static 'img/hamko4.png' %}" alt="">
+    </div>
+</div>
+<div class="yangilik">
+    <span></span>
+    <h3>Yangiliklar</h3>
+</div>
+<div class="wrapper1">
     <ul class="carusel">
         {% for news in news %}
-      <li class="card">
-        <div class="img"><img src="{{ news.image.url }}" alt=""></div>
-        <div class="list">
-          <p>{{ news.name }} </p>
-        <h3>{{ news.title }}</h3>
-        <div class="otish">
-          <a href="">to’liq o’qish
-            <img src="image/Vector.png" alt="">
-          </a>
+        <li class="card">
+            <div class="img"><img src="{{ news.image.url }}" alt=""></div>
+            <div class="list">
+                <p>{{ news.name }} </p>
+                <h3>{{ news.title }}</h3>
+                <div class="otish">
+                    <a href="">to’liq o’qish
+                        <img src="image/Vector.png" alt="">
+                    </a>
+                </div>
+            </div>
+        </li>
+        {% endfor %}
+        <div class="button">
+            <button class="butttonImg1" id="prev">
+                <img src="img/slyd.png" alt="">
+            </button>
+            <button class="butttonImg2" id="next">
+                <img src="{%  static 'img/slyd.png' %}" alt="">
+            </button>
         </div>
-        </div>
-      </li>
-      {% endfor %}
-      <div class="button">
-        <button class="butttonImg1" id="prev">
-          <img src="img/slyd.png" alt="">
-        </button>
-        <button class="butttonImg2" id="next">
-          <img src="{%  static 'img/slyd.png' %}" alt="">
-        </button>
-      </div>
     </ul>
 </div>
 <div class="navbar8">
@@ -252,7 +283,7 @@
                 </div>
             </div>
             <div class="box2">
-                <p> <label for="">Fan nomi</label></p>
+                <p><label for="">Fan nomi</label></p>
                 <div class="border">
                     <input type="text" placeholder="Iqtisod">
                 </div>
@@ -269,7 +300,7 @@
                         <option value="">4-kurs</option>
                     </select>
                 </div>
-        </div>
+            </div>
             <div class="box2">
                 <p><label for="">DEPARTMENT</label></p>
                 <div class="border">
@@ -278,17 +309,17 @@
                         <option value="">Select Department</option>
                     </select>
                 </div>
-        </div>
+            </div>
     </form>
 </div>
 <footer>
 
-        <span class="s1"></span>
-        <span class="s2"></span>
-        <span class="s3"></span>
-        <span class="s4"></span>
-        <span class="s5"></span>
-        <span class="s6"></span>
+    <span class="s1"></span>
+    <span class="s2"></span>
+    <span class="s3"></span>
+    <span class="s4"></span>
+    <span class="s5"></span>
+    <span class="s6"></span>
 
     <div class="blog1">
         <div class="box1">
@@ -300,7 +331,7 @@
         <div class="box3">
             <a href="#"><img src="{% static 'img/kontr1.png' %}" alt=""></a>
             <a href="#"><img src="{% static 'img/kontr2.png' %}" alt=""></a>
-           <a href="#"><img src="{% static 'img/kontr3.png' %}" alt=""></a>
+            <a href="#"><img src="{% static 'img/kontr3.png' %}" alt=""></a>
         </div>
     </div>
     <div class="blog2">
@@ -318,7 +349,7 @@
             <div class="lin3">
                 <h2>Kafedralar</h2>
                 <a href="#">Iqtisodiy xavfsizlik</a>
-                <a href="#">Raqamli iqtisodiyot va axborot 
+                <a href="#">Raqamli iqtisodiyot va axborot
                     texnologiyalari</a>
                 <a href="#">Innovatsion ta’lim</a>
                 <a href="#">Iqtisodiyotda matematik metodlar</a>
@@ -335,7 +366,7 @@
     <div class="blog3">
         <div class="box1">
             <img src="{% static 'img/tel2.png' %}" alt="">
-            <a href="#">+(000) 000 000</a>
+            <a href="#">+(998) 71 239 01 29</a>
         </div>
         <div class="box2">
             <img src="{% static 'img/email.png' %}" alt="">
